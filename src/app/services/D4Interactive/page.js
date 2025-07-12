@@ -1,5 +1,6 @@
+import ServicesSection from "@/app/Components/ServicesSection";
 import Image from "next/image";
-import ServicesSection from "../../components/ServicesSection"; // Adjust path if needed
+// Adjust path if needed
 
 // ✅ Server-only metadata export
 export const metadata = {
