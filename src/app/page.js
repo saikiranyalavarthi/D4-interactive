@@ -3,7 +3,6 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { CheckCircle } from "lucide-react";
 import AnimatedServices from "./Components/AnimatedServices";
 import ServicesSection from "./Components/ServicesSection";
 import ExperienceSection from "./Components/ExperienceSection";
@@ -70,13 +69,13 @@ export default function Home() {
         "A sleek website for a tech company showcasing IT Infrastructure, SAP Services, Staffing, and Immigration Solutions using Next.js and Tailwind CSS.",
     },
     {
-      title: "Coworking Space Booking App",
+      title: "Services Booking site",
       image: "/assets/image9.jpg",
       description:
         "Mobile-first app and website for hourly/daily coworking space booking. Includes seat selection, map view, and testimonials.",
     },
     {
-      title: "Portfolio Website",
+      title: "Technology scince  Website",
       image: "/assets/image11.jpg",
       description:
         "A personal portfolio showcasing a developer's skills, past projects, blog, and contact information. Built with Next.js, Tailwind CSS, and Framer Motion animations.",
@@ -84,7 +83,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white font-sans min-h-screen">
+    <div className="bg-white text-black font-sans min-h-screen">
       <Head>
         <title>
           D4 Interactive | Digital Marketing & Web Development Company India
@@ -114,27 +113,27 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      {/* Hero Section (Dark) */}
-      <header className="py-20 px-6 md:px-20 ">
+      {/* Hero Section */}
+      <header className="py-20 px-6 md:px-20 bg-white text-black">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="flex-1 text-center md:text-left">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4 animate-pulse">
+            <h1 className="text-4xl sm:text-5xl font-bold mb-4 animate-pulse text-indigo-700">
               Your Partner in Digital Success
             </h1>
-            <p className="text-xl sm:text-2xl mb-6 max-w-xl">
+            <p className="text-xl sm:text-2xl mb-6 max-w-xl text-gray-700">
               Grow your business with our expert digital marketing, web and app
               development services.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a
                 href="/contact"
-                className="bg-red-700 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg transition"
+                className="bg-blue-800 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg transition"
               >
                 Contact Us
               </a>
               <a
                 href="/services/D4Interactive"
-                className="bg-red-700 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-semibold transition"
+                className="bg-blue-800 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-semibold transition"
               >
                 Our Services
               </a>
@@ -159,16 +158,16 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Light Section: Services */}
-      <section className="py-16 px-6 md:px-20bg-gradient-to-r from-black via-[#AA2428] to-black text-white ">
-        <h2 className="text-4xl font-bold text-center text-red-600 mb-12">
+      {/* Services Section */}
+      <section className="py-16 px-6 md:px-20 bg-white text-black">
+        <h2 className="text-4xl font-bold text-center text-blue-800 mb-12">
           Our Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((item, i) => (
             <div
               key={i}
-              className={`bg-gradient-to-r from-black via-[#AA2428] to-black text-white rounded-2xl shadow-lg ${item.shadowClass} transition-shadow duration-300 p-4 text-center`}
+              className={`bg-white text-black rounded-2xl shadow-lg ${item.shadowClass} transition-shadow duration-300 p-4 text-center`}
             >
               <Image
                 src={item.img}
@@ -177,28 +176,28 @@ export default function Home() {
                 height={300}
                 className="w-full h-48 object-cover rounded-xl mb-4"
               />
-              <h3
-                className={`text-xl text-blue-900 font-semibold ${item.textClass} mb-2`}
-              >
+              <h3 className={`text-xl font-semibold ${item.textClass} mb-2`}>
                 {item.title}
               </h3>
-              <p className="text-white text-sm">{item.desc}</p>
+              <p className="text-gray-700 text-sm">{item.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       <ServiceCategories />
-      <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 items-center gap-12bg-gradient-to-r from-black via-[#AA2428] to-black text-white ">
+
+      {/* About Section */}
+      <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 items-center gap-12 bg-white text-black">
         <div>
           <h2 className="text-3xl font-semibold text-indigo-700 mb-4">About</h2>
-          <p className="text-white mb-4">
+          <p className="text-gray-700 mb-4">
             D4 Interactive is a leading digital agency passionate about helping
             businesses thrive online. We provide top-tier services in digital
             marketing, web development, app development, and WordPress
             solutions.
           </p>
-          <p className="text-white">
+          <p className="text-gray-700">
             Founded with a mission to deliver result-oriented strategies, we
             blend creativity and technology to drive measurable results and
             customer satisfaction. Our team is dedicated to building long-term
@@ -219,20 +218,20 @@ export default function Home() {
       </main>
 
       {/* Projects Section */}
-      <section className="py-20 px-6 md:px-20bg-gradient-to-r from-black via-[#AA2428] to-black text-white text-center">
+      <section className="py-20 px-6 md:px-20 bg-white text-center text-black">
         <h1 className="text-4xl font-bold text-indigo-700 mb-4">
           Our Work & Projects
         </h1>
-        <p className="text-white max-w-3xl mx-auto">
+        <p className="text-gray-700 max-w-3xl mx-auto">
           We craft digital experiences across industries...
         </p>
       </section>
 
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-20 pb-20 bg-gradient-to-r from-black via-[#AA2428] to-black text-white">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-20 pb-20 bg-white text-black">
         {projects.map((proj, index) => (
           <div
             key={index}
-            className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white p-6 rounded-xl shadow-md"
+            className="bg-white text-black p-6 rounded-xl shadow-md"
           >
             <Image
               src={proj.image}
@@ -244,7 +243,7 @@ export default function Home() {
             <h3 className="text-lg font-semibold text-indigo-700 mb-2">
               {proj.title}
             </h3>
-            <p className="text-white text-sm">{proj.description}</p>
+            <p className="text-gray-700 text-sm">{proj.description}</p>
           </div>
         ))}
       </section>
@@ -256,16 +255,16 @@ export default function Home() {
       <ScrollingText />
 
       {/* Contact CTA */}
-      <section className="py-16 px-6 md:px-20 bg-gradient-to-r from-black via-[#AA2428] to-black text-white  text-center">
-        <h2 className="text-3xl font-semibold text-red-600 mb-6">
+      <section className="py-16 px-6 md:px-20 bg-blue text-center text-black">
+        <h2 className="text-3xl font-semibold text-blue-700 mb-6">
           Get in Touch
         </h2>
-        <p className="text-white max-w-2xl mx-auto mb-8">
+        <p className="text-gray-700 max-w-2xl mx-auto mb-8">
           Let’s connect and build something amazing together.
         </p>
         <a
           href="/contact"
-          className="inline-block bg-red-700 text-white px-6 py-3 rounded hover:bg-indigo-700 transition"
+          className="inline-block bg-blue-700 text-white px-6 py-3 rounded hover:bg-indigo-700 transition"
         >
           Contact Us
         </a>

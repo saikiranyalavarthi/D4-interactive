@@ -32,17 +32,18 @@ const features = [
 
 export default function WeDiffer() {
   return (
-    <div className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white py-20 px-6">
+    <div className="bg-white text-indigo-900 py-20 px-6">
       <div className="text-center max-w-5xl mx-auto mb-16">
-        <p className="text-white uppercase text-sm font-semibold mb-2 tracking-wide">
+        <p className="text-blue-500 uppercase text-sm font-semibold mb-2 tracking-wide">
           Why we differ
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
           What Makes Us the Best Digital Marketing Company in Hyderabad
         </h2>
-        <p className="text-white/90 text-base md:text-lg leading-relaxed">
+        <p className="text-indigo-700 text-base md:text-lg leading-relaxed">
           In today’s digital jungle, it’s not enough to be heard — you need to
-          be remembered. At <strong>D4 Interactive</strong>, our digital
+          be remembered. At{" "}
+          <strong className="text-blue-700">D4 Interactive</strong>, our digital
           strategies are designed to rise above the noise. We build digital
           presence that’s louder, smarter, and rooted in what drives your
           customers to act.
@@ -57,15 +58,15 @@ export default function WeDiffer() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: idx * 0.2 }}
-            className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg hover:shadow-white/30 transition-all duration-300 hover:-translate-y-1"
+            className="bg-blue-50 hover:bg-blue-100 rounded-2xl p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1"
           >
-            <div className="bg-white/20 rounded-full w-20 h-20 mx-auto flex items-center justify-center mb-4">
-              <feature.icon className="w-10 h-10 text-white" />
+            <div className="bg-blue-200/50 rounded-full w-20 h-20 mx-auto flex items-center justify-center mb-4">
+              <feature.icon className="w-10 h-10 text-blue-700" />
             </div>
-            <h3 className="text-lg font-semibold text-white mb-2">
+            <h3 className="text-lg font-semibold text-indigo-900 mb-2">
               {feature.title}
             </h3>
-            <p className="text-white/80 text-sm leading-relaxed">
+            <p className="text-indigo-800 text-sm leading-relaxed">
               {feature.description}
             </p>
           </motion.div>

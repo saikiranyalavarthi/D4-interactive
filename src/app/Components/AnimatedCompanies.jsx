@@ -1,51 +1,52 @@
 "use client";
+
 import { motion } from "framer-motion";
 
 // 🏷️ Company names by category
 const companies = [
-  "Suvira Facilities Pvt Ltd", // Security
-  "manaenadu", // News
-  "Digo IT Solutions", // IT
-  "Mallela Telugu Tejam", // News
-  "Rozogar", // Job/Startup
-  "Bharat sanchar", // Telecom
-  "feble Decor", // Interior
-  "coworking space", // Workspace
-  "3 estate", // Real Estate
-  "vet and meet", // Petshop
-  "arya nuero care hospital", // Hospital
-  "fortunate Properties", // Real Estate
-  "D4 Interactive", // New company added
+  "Suvira Facilities Pvt Ltd",
+  "manaenadu",
+  "Digo IT Solutions",
+  "Mallela Telugu Tejam",
+  "Rozogar",
+  "Bharat sanchar",
+  "feble Decor",
+  "coworking space",
+  "3 estate",
+  "vet and meet",
+  "arya nuero care hospital",
+  "fortunate Properties",
+  "D4 Interactive",
 ];
 
-// 🎨 Assign color based on category keyword
+// 🎨 Assign category background colors
 const getColorByCategory = (name) => {
   name = name.toLowerCase();
   if (name.includes("hospital") || name.includes("care"))
-    return "bg-red-500/20"; // 🏥 Hospitals
+    return "bg-red-500/20";
   if (name.includes("estate") || name.includes("properties"))
-    return "bg-yellow-500/20"; // 🏘 Real Estate
-  if (name.includes("pet") || name.includes("vet")) return "bg-green-500/20"; // 🐾 Petshops
-  if (name.includes("mana") || name.includes("tej")) return "bg-indigo-500/20"; // 📰 News
+    return "bg-yellow-500/20";
+  if (name.includes("pet") || name.includes("vet")) return "bg-green-500/20";
+  if (name.includes("mana") || name.includes("tej")) return "bg-indigo-500/20";
   if (
     name.includes("it") ||
     name.includes("tech") ||
     name.includes("interactive")
   )
-    return "bg-blue-500/20"; // 💻 IT
-  if (name.includes("cowork")) return "bg-purple-500/20"; // 🧑‍💻 Coworking
-  return "bg-white/10"; // Default
+    return "bg-blue-500/20";
+  if (name.includes("cowork")) return "bg-purple-500/20";
+  return "bg-white/10"; // Default style
 };
 
 export default function AnimatedCompanies() {
-  const repeatedCompanies = [...companies, ...companies, ...companies];
+  const repeatedCompanies = [...companies, ...companies, ...companies]; // Repeat for smooth infinite scroll
 
   return (
-    <section className="w-full overflow-hidden py-10 bg-gradient-to-r from-teal-500 via-blue-600 to-cyan-500">
+    <section className="w-full overflow-hidden py-10 bg-gradient-to-br from-blue-900 via-purple-700 to-indigo-900">
       <div className="relative w-full">
         <motion.div
           className="flex gap-6 w-max"
-          animate={{ x: ["-100%", "0%"] }}
+          animate={{ x: ["0%", "-100%"] }}
           transition={{
             repeat: Infinity,
             duration: 70,
@@ -55,9 +56,9 @@ export default function AnimatedCompanies() {
           {repeatedCompanies.map((company, index) => (
             <div
               key={index}
-              className={`min-w-max text-white text-base sm:text-lg font-semibold ${getColorByCategory(
+              className={`min-w-max text-white text-base sm:text-lg font-semibold px-6 py-3 rounded-xl shadow backdrop-blur-md ${getColorByCategory(
                 company
-              )} px-6 py-3 rounded-xl shadow hover:bg-white/30 transition-all whitespace-nowrap`}
+              )} hover:bg-white/20 transition-all whitespace-nowrap`}
             >
               {company}
             </div>

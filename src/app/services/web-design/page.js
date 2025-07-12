@@ -18,14 +18,14 @@ export default function WebDesigningPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-black via-[#AA2428] to-black text-white">
+    <div className="min-h-screen text-white">
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords.join(", ")} />
       </Head>
 
-      {/* 🔥 Gradient Heading */}
+      {/* 🔥 Hero Section - Gradient Background */}
       <div className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white text-center py-12 px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           Web Designing Services
@@ -38,8 +38,8 @@ export default function WebDesigningPage() {
         </nav>
       </div>
 
-      {/* Main Content */}
-      <main className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white px-4 md:px-16 lg:px-24 py-10 max-w-7xl mx-auto my-10 rounded-xl shadow-lg">
+      {/* ✅ Main Content - White Background */}
+      <main className="bg-white text-black px-4 md:px-16 lg:px-24 py-10 max-w-7xl mx-auto rounded-xl shadow-lg -mt-10 relative z-10">
         <section className="mt-2">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-indigo-700">
             Web Designing
@@ -68,18 +68,16 @@ export default function WebDesigningPage() {
               />
             </div>
             <div className="md:w-1/2">
-              <p className="mb-4 text-white">
+              <p className="mb-4">
                 <strong>
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-rose-500">
                     D4 Interactive
                   </span>
-                </strong>
-                , being one of the best web design and SEO service providers in
-                Hyderabad, understands the core vision of your business and
-                ensures your website speaks to your users in both design and
-                message.
+                </strong>{" "}
+                understands the core vision of your business and ensures your
+                website speaks to your users in both design and message.
               </p>
-              <p className="mb-4 text-white">
+              <p className="mb-4">
                 Your brand needs a holistic output — from hosting to lead
                 generation. That&apos;s where we bring stunning, fast, and
                 secure websites that are tailored for performance, trust, and
@@ -88,7 +86,7 @@ export default function WebDesigningPage() {
             </div>
           </div>
 
-          <p className="text-white mb-4">
+          <p className="mb-4">
             Users enjoy visiting websites that are visually appealing and
             intuitive to navigate. At{" "}
             <strong>
@@ -99,12 +97,14 @@ export default function WebDesigningPage() {
             , our creative developers deliver clean layouts and smart structure,
             helping your visitors engage, explore, and act.
           </p>
-          <p className="text-white mb-4">
+
+          <p className="mb-4">
             Because it&apos;s not always about technical edge — it&apos;s about
             emotional touch, visual storytelling, and experience that make your
             brand unforgettable in the digital crowd.
           </p>
-          <p className="text-white mb-6">
+
+          <p className="mb-6">
             The secret to{" "}
             <strong>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-rose-500">
@@ -113,8 +113,7 @@ export default function WebDesigningPage() {
             </strong>
             &apos;s success is our ability to deliver agile, scalable, and
             responsive web design that gives your business a competitive
-            advantage. We help your site leave a lasting first impression — with
-            speed, performance, and accessibility in mind.
+            advantage.
           </p>
 
           {/* CTA Section */}

@@ -18,14 +18,14 @@ const services = [
 ];
 
 export default function AnimatedServices() {
-  const repeatedServices = [...services, ...services, ...services]; // more items for infinite loop
+  const repeatedServices = [...services, ...services, ...services]; // for continuous scroll
 
   return (
-    <section className="w-full overflow-hidden py-10 bg-gradient-to-r from-black via-[#AA2428] to-black">
+    <section className="w-full overflow-hidden py-10 bg-gradient-to-br from-blue-900 via-purple-700 to-indigo-900">
       <div className="relative w-full">
         <motion.div
           className="flex gap-6 w-max"
-          animate={{ x: ["-100%", "0%"] }}
+          animate={{ x: ["0%", "-100%"] }}
           transition={{
             repeat: Infinity,
             duration: 70,
@@ -35,7 +35,7 @@ export default function AnimatedServices() {
           {repeatedServices.map((service, index) => (
             <div
               key={index}
-              className="min-w-max text-white text-base sm:text-lg font-medium bg-white/10 px-6 py-3 rounded-xl shadow hover:bg-white/20 transition-all whitespace-nowrap"
+              className="min-w-max text-white text-sm sm:text-base font-medium bg-white/10 backdrop-blur-md px-6 py-3 rounded-full shadow hover:bg-white/20 transition-all whitespace-nowrap"
             >
               {service}
             </div>

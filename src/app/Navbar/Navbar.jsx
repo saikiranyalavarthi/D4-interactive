@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, ChevronDown } from "lucide-react";
 
 const serviceLinks = [
@@ -21,10 +22,15 @@ const Navbar = () => {
   return (
     <nav className="bg-gradient-to-r from-black via-[#AA2428] to-black shadow-lg px-6 py-4 text-white z-50 relative">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold">
-          <span className="bg-gradient-to-r from-white via-red-300 to-red-500 bg-clip-text text-transparent font-semibold text-2xl">
-            D4 Interactive
-          </span>
+        <Link href="/" className="flex items-center space-x-2">
+          <Image
+            src="/assets/logo.png" // 👈 replace with your actual logo path in public folder
+            alt="D4 Interactive Logo"
+            width={80}
+            height={28}
+            className="object-contain"
+            priority
+          />
         </Link>
 
         <div className="md:hidden">
@@ -45,7 +51,7 @@ const Navbar = () => {
             <button className="flex items-center hover:underline">
               Services <ChevronDown size={16} className="ml-1" />
             </button>
-            <div className="absolute top-full left-0 mt-2 w-64 bg-gradient-to-r from-black via-[#AA2428] to-black text-white  rounded-md shadow-lg opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 transform origin-top transition-all duration-300 z-40">
+            <div className="absolute top-full left-0 mt-2 w-64 bg-gradient-to-r from-black via-[#AA2428] to-black text-white rounded-md shadow-lg opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 transform origin-top transition-all duration-300 z-40">
               {serviceLinks.map((link, i) => (
                 <Link
                   key={i}

@@ -60,15 +60,15 @@ const blogPosts = [
 
 export default function BlogPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-black via-[#AA2428] to-black text-white py-12 px-4">
-      <h1 className="text-4xl font-bold text-center mb-10 text-white">
+    <div className="min-h-screen bg-white text-indigo-900 py-12 px-4">
+      <h1 className="text-4xl font-bold text-center mb-10">
         D4 Interactive Insights & Digital Growth Strategies
       </h1>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {blogPosts.map((post, index) => (
           <div
             key={index}
-            className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow hover:shadow-xl transition-all border border-white/10"
+            className="bg-indigo-50 border border-indigo-100 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all"
           >
             <Image
               src={post.image}
@@ -78,10 +78,10 @@ export default function BlogPage() {
               className="w-full h-52 object-cover"
             />
             <div className="p-5">
-              <h2 className="text-xl font-semibold text-pink-400 mb-2">
+              <h2 className="text-lg font-semibold text-indigo-700 mb-2">
                 {post.title}
               </h2>
-              <p className="text-gray-200 text-sm">{post.summary}</p>
+              <p className="text-gray-700 text-sm">{post.summary}</p>
             </div>
           </div>
         ))}

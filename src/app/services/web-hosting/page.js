@@ -19,14 +19,14 @@ export default function WebHostingPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-black via-[#AA2428] to-black text-white">
+    <div className="min-h-screen text-white">
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords.join(", ")} />
       </Head>
 
-      {/* 🔥 Gradient Heading */}
+      {/* 🔥 Hero Section */}
       <div className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white text-center py-12 px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           Web Hosting Services
@@ -39,8 +39,8 @@ export default function WebHostingPage() {
         </nav>
       </div>
 
-      {/* Main White Box Content */}
-      <main className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white py-12 px-4 md:px-16 lg:px-24 max-w-7xl mx-auto my-10 rounded-xl shadow-lg">
+      {/* ✅ White Main Section */}
+      <main className="bg-white text-black py-12 px-4 md:px-16 lg:px-24 max-w-7xl mx-auto -mt-10 rounded-xl shadow-lg relative z-10">
         {/* Intro Section */}
         <p className="text-lg mb-6 leading-relaxed">
           When you create a website and want the world to access it, you need
@@ -51,14 +51,14 @@ export default function WebHostingPage() {
           hosting is the foundation.
         </p>
 
-        {/* Service Details */}
+        {/* Company Section */}
         <h2 className="text-2xl font-semibold mb-4 text-indigo-600">
           Web Hosting Company in Hyderabad
         </h2>
 
         <div className="flex flex-col md:flex-row items-center gap-8 mb-10">
           <div className="md:w-1/2">
-            <p className="mb-4 text-white">
+            <p className="mb-4">
               At{" "}
               <strong className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-rose-500">
                 D4 Interactive
@@ -69,13 +69,13 @@ export default function WebHostingPage() {
               services, ensuring your entire web infrastructure is reliable,
               fast, and secure.
             </p>
-            <p className="mb-4 text-white">
+            <p className="mb-4">
               From selecting the perfect domain name to linking it with the
               right hosting plan, we guide you end-to-end. Whether you&apos;re
               launching your first site or migrating a high-traffic one, we
               offer unmatched uptime, security, and support.
             </p>
-            <p className="text-white">
+            <p>
               Our hosting plans are designed to suit startups, enterprises, and
               everything in between. We focus on speed, scalability, and
               performance so you can focus on growing your business.
@@ -92,12 +92,12 @@ export default function WebHostingPage() {
           </div>
         </div>
 
-        {/* Hosting Plans */}
+        {/* Hosting Plans List */}
         <h3 className="text-xl font-semibold text-indigo-600 mb-4">
           Hosting Solutions We Offer:
         </h3>
 
-        <ul className="list-disc pl-6 text-white space-y-2 mb-6">
+        <ul className="list-disc pl-6 space-y-2 mb-6">
           <li>Dedicated Hosting</li>
           <li>Shared Web Hosting</li>
           <li>Cloud Hosting</li>
@@ -105,8 +105,8 @@ export default function WebHostingPage() {
           <li>Domain Registration &amp; Management</li>
         </ul>
 
-        {/* Themed Paragraph */}
-        <div className="text-white text-lg leading-relaxed mb-10">
+        {/* Themed Highlight Paragraph */}
+        <div className="text-lg leading-relaxed mb-10">
           <p>
             Our proven hosting solutions come with enterprise-grade security,
             99.99% uptime, and 24x7 expert support. Whether you&apos;re looking

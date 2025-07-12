@@ -21,7 +21,7 @@ export default function SEOPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-black via-[#AA2428] to-black text-white">
+    <div className="font-sans min-h-screen text-white">
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -29,7 +29,7 @@ export default function SEOPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      {/* 🔥 Gradient Header Section */}
+      {/* 🔥 Gradient Hero Section */}
       <div className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white text-center py-12 px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           Search Engine Optimization (SEO) Services
@@ -42,9 +42,9 @@ export default function SEOPage() {
         </nav>
       </div>
 
-      {/* ✅ Main SEO Content (Light section inside dark bg) */}
-      <main className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white px-4 md:px-16 py-10 max-w-7xl mx-auto rounded-xl shadow-lg my-10">
-        {/* Hero Section */}
+      {/* ✅ White Background Main Section */}
+      <main className="bg-white text-black px-4 md:px-16 py-12 max-w-7xl mx-auto rounded-xl shadow-lg -mt-10 relative z-10">
+        {/* Hero Inner Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

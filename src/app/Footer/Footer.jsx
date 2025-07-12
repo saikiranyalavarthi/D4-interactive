@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import {
   FaFacebookF,
   FaInstagram,
@@ -17,11 +18,15 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
-        {/* Column 1: About */}
+        {/* Column 1: About with Logo */}
         <div>
-          <h2 className="mb-4 bg-gradient-to-r from-white via-red-300 to-red-500 bg-clip-text text-transparent font-semibold text-2xl">
-            D4 Interactive
-          </h2>
+          <Image
+            src="/assets/logo.png" // ✅ Correct path (must start with /)
+            alt="D4 Interactive Logo"
+            width={140}
+            height={40}
+            className="mb-4"
+          />
           <p className="text-sm leading-relaxed mb-4">
             Digital Marketing & Development Agency based in Hyderabad. We help
             your business grow with SEO, Ads, Websites, and Mobile Applications

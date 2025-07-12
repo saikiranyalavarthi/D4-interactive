@@ -42,7 +42,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="font-sans bg-gradient-to-r from-black via-[#AA2428] to-black text-white">
+    <div className="font-sans">
       <Head>
         <title>D4 Interactive - Projects</title>
         <meta
@@ -57,10 +57,8 @@ export default function Home() {
       </Head>
 
       {/* Hero Section */}
-      <section className="py-20 px-6 md:px-20 text-center">
-        <h1 className="text-4xl font-bold text-white mb-4">
-          Our Work &amp; Projects
-        </h1>
+      <section className="py-20 px-6 md:px-20 text-center bg-gradient-to-r from-black via-[#AA2428] to-black text-white">
+        <h1 className="text-4xl font-bold mb-4">Our Work &amp; Projects</h1>
         <p className="text-gray-200 max-w-3xl mx-auto">
           From scalable web platforms to mobile-first applications, here’s a
           glimpse into what we’ve built at D4 Interactive.
@@ -68,29 +66,31 @@ export default function Home() {
       </section>
 
       {/* Projects Grid */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-20 pb-20">
-        {projects.map((proj, index) => (
-          <div
-            key={index}
-            className="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-md"
-          >
-            <Image
-              src={proj.image}
-              alt={proj.title}
-              width={400}
-              height={250}
-              className="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 className="text-lg font-semibold text-pink-300 mb-2">
-              {proj.title}
-            </h3>
-            <p className="text-gray-100 text-sm">{proj.description}</p>
-          </div>
-        ))}
+      <section className="bg-white text-indigo-900 py-16 px-6 md:px-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((proj, index) => (
+            <div
+              key={index}
+              className="bg-indigo-50 border border-indigo-100 p-6 rounded-xl shadow-md hover:shadow-lg transition-all"
+            >
+              <Image
+                src={proj.image}
+                alt={proj.title}
+                width={400}
+                height={250}
+                className="w-full h-48 object-cover rounded-md mb-4"
+              />
+              <h3 className="text-lg font-semibold text-indigo-700 mb-2">
+                {proj.title}
+              </h3>
+              <p className="text-sm text-gray-700">{proj.description}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* SEO-rich Paragraphs */}
-      <section className="px-6 md:px-20 pb-20 space-y-10 text-gray-200">
+      <section className="bg-white text-indigo-900 px-6 md:px-20 pb-20 space-y-10">
         {[
           {
             title: "App Development Projects",
@@ -130,10 +130,12 @@ export default function Home() {
           },
         ].map((section, i) => (
           <div key={i}>
-            <h2 className="text-2xl font-semibold text-pink-400 mb-2">
+            <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
               {section.title}
             </h2>
-            <p>{section.content}</p>
+            <p className="text-gray-800 text-sm leading-relaxed">
+              {section.content}
+            </p>
           </div>
         ))}
       </section>

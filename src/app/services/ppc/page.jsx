@@ -1,34 +1,29 @@
+"use client";
+
 import Head from "next/head";
 import Image from "next/image";
 
-export const metadata = {
-  title: "Pay Per Click (PPC) Advertising Services | D4 Interactive Hyderabad",
-  description:
-    "Boost your brand with Google Ads & PPC Campaigns from D4 Interactive, a trusted PPC company in Hyderabad. Certified Google Ads experts. Contact now!",
-  keywords: [
-    "PPC Company Hyderabad",
-    "Google Ads Services Hyderabad",
-    "Pay Per Click Advertising",
-    "Top Digital Marketing Agency in Hyderabad",
-    "PPC Campaign Experts India",
-    "D4 Interactive SEO PPC",
-    "Digital Advertising Hyderabad",
-    "Google Ads Agency Hyderabad",
-  ],
-};
-
 export default function PPCPage() {
   return (
-    <div className="font-sans bg-gradient-to-r from-black via-[#AA2428] to-black text-white min-h-screen">
+    <div className="font-sans min-h-screen text-black">
+      {/* Meta tags for SEO */}
       <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <meta name="keywords" content={metadata.keywords.join(", ")} />
+        <title>
+          Pay Per Click (PPC) Advertising Services | D4 Interactive Hyderabad
+        </title>
+        <meta
+          name="description"
+          content="Boost your brand with Google Ads & PPC Campaigns from D4 Interactive, a trusted PPC company in Hyderabad. Certified Google Ads experts. Contact now!"
+        />
+        <meta
+          name="keywords"
+          content="PPC Company Hyderabad, Google Ads Services Hyderabad, Pay Per Click Advertising, Top Digital Marketing Agency in Hyderabad, PPC Campaign Experts India, D4 Interactive SEO PPC, Digital Advertising Hyderabad, Google Ads Agency Hyderabad"
+        />
         <link rel="canonical" href="https://d4interactive.com/services/ppc" />
       </Head>
 
       {/* Hero Section */}
-      <section className="py-16 text-center px-4">
+      <section className="py-16 text-center px-4 bg-gradient-to-r from-black via-[#AA2428] to-black text-white">
         <h1 className="text-4xl font-bold mb-4">
           Pay Per Click (PPC) Services
         </h1>
@@ -39,9 +34,9 @@ export default function PPCPage() {
         </p>
       </section>
 
-      {/* Main Content */}
-      <main className=" bg-gradient-to-r from-black via-[#AA2428] to-black  text-white px-6 md:px-20 py-16 max-w-6xl mx-auto rounded-xl shadow-lg">
-        {/* Image & Intro */}
+      {/* Main Content with White Background */}
+      <main className="bg-white text-black px-6 md:px-20 py-16 max-w-6xl mx-auto rounded-xl shadow-lg -mt-10 relative z-10">
+        {/* Image & Intro Section */}
         <div className="flex flex-col md:flex-row items-center gap-10 mb-12">
           <div className="md:w-1/2">
             <Image
@@ -68,7 +63,7 @@ export default function PPCPage() {
           </div>
         </div>
 
-        {/* Why Choose Us */}
+        {/* Why Choose D4 Interactive Section */}
         <section className="space-y-6 text-lg leading-relaxed">
           <h2 className="text-2xl font-semibold">Why Choose D4 Interactive?</h2>
           <p>
@@ -109,7 +104,7 @@ export default function PPCPage() {
           </p>
         </section>
 
-        {/* CTA */}
+        {/* Call to Action */}
         <div className="mt-12 text-center">
           <a
             href="/contact"

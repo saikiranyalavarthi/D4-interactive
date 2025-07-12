@@ -19,14 +19,14 @@ export default function WebDevelopmentPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-black via-[#AA2428] to-black text-white">
+    <div className="min-h-screen text-white">
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords.join(", ")} />
       </Head>
 
-      {/* 🔥 Gradient Heading */}
+      {/* 🔥 Hero Section - Gradient Background */}
       <div className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white text-center py-12 px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           Web Development Services
@@ -39,8 +39,8 @@ export default function WebDevelopmentPage() {
         </nav>
       </div>
 
-      {/* Main Content */}
-      <main className="bg-gradient-to-r from-black via-[#AA2428] to-black text-whitepy-12 px-4 md:px-16 lg:px-24 max-w-7xl mx-auto my-10 rounded-xl shadow-lg">
+      {/* ✅ Main Content - White Background */}
+      <main className="bg-white text-black py-12 px-4 md:px-16 lg:px-24 max-w-7xl mx-auto -mt-10 rounded-xl shadow-lg relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-indigo-700">
           Web Development
         </h2>
@@ -63,11 +63,11 @@ export default function WebDevelopmentPage() {
           Web Development Company in Hyderabad
         </h3>
 
-        <p className="mb-4 text-white">
+        <p className="mb-4">
           Web development involves several steps and phases:
         </p>
 
-        <ul className="list-disc pl-6 text-white space-y-2 mb-6">
+        <ul className="list-disc pl-6 space-y-2 mb-6">
           <li>Project definition &amp; scope</li>
           <li>Visual design &amp; UI planning</li>
           <li>Frontend &amp; backend development</li>
@@ -78,7 +78,7 @@ export default function WebDevelopmentPage() {
 
         <div className="flex flex-col-reverse md:flex-row items-center gap-10 mb-10">
           <div className="md:w-1/2">
-            <p className="mb-4 text-white">
+            <p className="mb-4">
               <strong>
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-rose-500">
                   D4 Interactive
@@ -89,7 +89,7 @@ export default function WebDevelopmentPage() {
               platforms to SaaS tools and custom portals. Whether you need a
               dynamic business site or a complex web app, we deliver it.
             </p>
-            <p className=" text-white">
+            <p>
               Our team of skilled developers integrates cutting-edge
               technologies, frameworks, and tools to ensure your website is
               secure, fast, mobile-friendly, and easy to scale.
@@ -107,7 +107,7 @@ export default function WebDevelopmentPage() {
         </div>
 
         {/* Themed Paragraph */}
-        <div className="mb-10  text-white text-lg leading-relaxed">
+        <div className="mb-10 text-lg leading-relaxed">
           <p>
             A good website isn&apos;t just code — it&apos;s a business asset. At{" "}
             <strong>

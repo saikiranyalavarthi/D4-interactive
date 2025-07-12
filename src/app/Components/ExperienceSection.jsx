@@ -18,7 +18,7 @@ const pointsRight = [
 
 export default function ExperienceSection() {
   return (
-    <div className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white py-16 px-6 md:px-20">
+    <div className="bg-white text-blue-700 py-16 px-6 md:px-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* LEFT SIDE TEXT */}
         <div className="md:w-1/2 space-y-6">
@@ -26,10 +26,10 @@ export default function ExperienceSection() {
             With 10+ years of experience,
             <br />
             you get service at the{" "}
-            <span className="text-indigo-400">advanced level</span>.
+            <span className="text-indigo-600">advanced level</span>.
           </h2>
 
-          <p className="text-base md:text-lg text-white/90">
+          <p className="text-base md:text-lg text-black/90">
             <strong>D4 Interactive</strong> is a top-tier Digital Marketing
             Agency offering tailored services like SEO, Google Ads, Social Media
             Marketing, Reputation Management, and Web Development – trusted by
@@ -38,7 +38,7 @@ export default function ExperienceSection() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[...pointsLeft, ...pointsRight].map((point, i) => (
-              <div key={i} className="flex items-center gap-2 text-white/90">
+              <div key={i} className="flex items-center gap-2 text-black/90">
                 <CheckCircle className="text-indigo-400" size={18} />
                 <span>{point}</span>
               </div>

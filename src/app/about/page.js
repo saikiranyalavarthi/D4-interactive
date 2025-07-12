@@ -105,7 +105,7 @@ export default function About() {
       </Head>
 
       {/* Hero Section */}
-      <section className="py-28 text-center px-4">
+      <section className="py-28 text-center px-4 bg-gradient-to-r from-black via-[#AA2428] to-black text-white">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">About Us</h1>
         <p className="text-lg sm:text-xl max-w-3xl mx-auto">
           At D4 Interactive, we create powerful digital solutions that help
@@ -115,31 +115,31 @@ export default function About() {
       </section>
 
       {/* About Section */}
-      <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 items-center gap-12 bg-gradient-to-r from-black via-[#AA2428] to-black text-white ">
+      <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 items-center gap-12 bg-white ">
         <div>
           <h2 className="text-3xl font-semibold text-indigo-700 mb-4">About</h2>
-          <p className="mb-4">
+          <p className="mb-4 text-indigo-500">
             D4 Interactive is a full-service digital marketing company in India,
             committed to helping businesses thrive in the online world. From SEO
             and PPC to website development and branding — we build digital
             ecosystems that drive measurable results.
           </p>
-          <p className="mb-4">
+          <p className="mb-4 text-indigo-600">
             We understand that the digital landscape is constantly evolving, and
             what worked yesterday may not work today. That’s why we stay ahead
             of the curve by adapting our strategies to the latest trends and
             technologies.
           </p>
-          <p className="mb-4">
+          <p className="mb-4 text-indigo-600">
             In the digital world, data is king. We use advanced analytics and
             real-time insights to optimize every campaign, ensuring alignment
             with your business objectives.
           </p>
-          <p className="mb-4">
+          <p className="mb-4 text-indigo-600">
             We craft customized digital strategies based on your industry,
             target audience, and business goals — delivering maximum ROI.
           </p>
-          <p>
+          <p className="text-indigo-600">
             Whether it’s increasing brand awareness, driving traffic, or
             generating leads, our ultimate goal is to deliver results that move
             your business forward.
@@ -159,7 +159,7 @@ export default function About() {
       <ExperienceSection />
 
       {/* Mission */}
-      <section className="py-16 px-6 md:px-20 bg-gradient-to-r from-black via-[#AA2428] to-black text-white text-center ">
+      <section className="py-16 px-6 md:px-20 bg-white text-black text-center ">
         <h2 className="text-3xl font-semibold text-purple-700 mb-6">
           Our Mission
         </h2>
@@ -175,8 +175,8 @@ export default function About() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 px-6 md:px-20 text-center">
-        <h2 className="text-3xl font-semibold text-yellow-400 mb-6">
+      <section className="py-16 px-6 md:px-20 text-center bg-white">
+        <h2 className="text-3xl font-semibold text-indigo-800 mb-6">
           Why Choose Us?
         </h2>
         <div className="grid md:grid-cols-3 gap-8">

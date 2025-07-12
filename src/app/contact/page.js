@@ -26,7 +26,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="font-sans bg-gradient-to-r from-black via-[#AA2428] to-black text-white min-h-screen">
+    <div className="font-sans bg-white text-indigo-900 min-h-screen">
       <Head>
         <title>
           Contact D4 Interactive | SEO, Web & App Development in India
@@ -45,7 +45,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white py-24 text-center px-4">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">Contact Us</h1>
-        <p className="text-lg sm:text-xl max-w-3xl mx-auto">
+        <p className="text-lg sm:text-xl max-w-3xl mx-auto text-black">
           We’re here to help your business grow with expert digital solutions.
           Get in touch with our team for SEO, website & app development,
           WordPress customization, or marketing support.
@@ -53,7 +53,7 @@ export default function ContactPage() {
       </section>
 
       {/* Intro SEO Content */}
-      <section className="px-6 md:px-20 py-10 text-gray-100 max-w-4xl mx-auto text-center">
+      <section className="px-6 md:px-20 py-10 text-blue-600 max-w-4xl mx-auto text-center">
         <p className="mb-6">
           Whether you’re looking for a trusted{" "}
           <strong>SEO company in India</strong>, need help with{" "}
@@ -71,41 +71,45 @@ export default function ContactPage() {
 
       {/* Contact Form */}
       <section className="py-16 px-6 md:px-20">
-        <div className="max-w-2xl mx-auto bg-white/10 p-8 rounded-xl shadow-lg backdrop-blur-sm">
+        <div className="max-w-2xl mx-auto bg-indigo-50 p-8 rounded-xl shadow-lg">
           <form onSubmit={handleSubmit} className="grid gap-6">
             <div>
-              <label className="block mb-1 font-medium">Your Name</label>
+              <label className="block mb-1 font-medium text-indigo-800">
+                Your Name
+              </label>
               <input
                 type="text"
                 name="name"
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded border border-white/30 bg-transparent text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#AA2428]"
+                className="w-full px-4 py-2 rounded border border-indigo-200 bg-white text-indigo-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               />
             </div>
 
             <div>
-              <label className="block mb-1 font-medium">Email</label>
+              <label className="block mb-1 font-medium text-indigo-800">
+                Email
+              </label>
               <input
                 type="email"
                 name="email"
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded border border-white/30 bg-transparent text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#AA2428]"
+                className="w-full px-4 py-2 rounded border border-indigo-200 bg-white text-indigo-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               />
             </div>
 
             <div>
-              <label className="block mb-1 font-medium">
+              <label className="block mb-1 font-medium text-indigo-800">
                 What Service Do You Need?
               </label>
               <select
                 name="service"
                 value={formData.service}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded border border-white/30 bg-black text-white focus:outline-none focus:ring-2 focus:ring-[#AA2428]"
+                className="w-full px-4 py-2 rounded border border-indigo-200 bg-white text-indigo-900 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
                 <option value="Website Development">Website Development</option>
                 <option value="App Development">App Development</option>
@@ -118,14 +122,16 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <label className="block mb-1 font-medium">Message</label>
+              <label className="block mb-1 font-medium text-indigo-800">
+                Message
+              </label>
               <textarea
                 name="message"
                 rows="4"
                 required
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded border border-white/30 bg-transparent text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#AA2428]"
+                className="w-full px-4 py-2 rounded border border-indigo-200 bg-white text-indigo-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               />
             </div>
 
@@ -140,7 +146,7 @@ export default function ContactPage() {
       </section>
 
       {/* SEO Note */}
-      <section className="py-10 px-6 md:px-20 text-center text-gray-300 text-sm">
+      <section className="py-10 px-6 md:px-20 text-center text-gray-600 text-sm">
         <p>
           Looking to grow online? D4 Interactive provides expert-level solutions
           in <strong>SEO optimization</strong>,{" "}

@@ -20,7 +20,7 @@ export default function SocialMediaMarketingPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-black via-[#AA2428] to-black text-white">
+    <div className="min-h-screen text-white">
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -40,8 +40,8 @@ export default function SocialMediaMarketingPage() {
         </nav>
       </div>
 
-      {/* 💡 Light Content Wrapper inside Dark BG */}
-      <main className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white  px-4 md:px-16 py-10 max-w-7xl mx-auto my-10 rounded-xl shadow-lg">
+      {/* 💡 White Content Wrapper */}
+      <main className="bg-white text-black px-4 md:px-16 py-10 max-w-7xl mx-auto rounded-xl shadow-lg -mt-10 relative z-10">
         {/* Hero Section */}
         <div className="flex flex-col md:flex-row items-center gap-10 mt-4">
           <div className="flex-1">
@@ -100,8 +100,7 @@ export default function SocialMediaMarketingPage() {
             reinforce your brand trust. At <strong>D4 Interactive</strong>, we
             don’t just schedule posts — we tell compelling stories, spark real
             interactions, and track every performance metric for ROI-focused
-            campaigns. With a deep understanding of platform algorithms, we help
-            you rise above the digital noise and grow authentically.
+            campaigns.
           </p>
         </section>
 
