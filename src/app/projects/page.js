@@ -28,13 +28,13 @@ export default function Home() {
         "A sleek website for a tech company showcasing IT Infrastructure, SAP Services, Staffing, and Immigration Solutions using Next.js and Tailwind CSS.",
     },
     {
-      title: "Coworking Space Booking App",
+      title: "Services Booking site",
       image: "/assets/image9.jpg",
       description:
         "Mobile-first app and website for hourly/daily coworking space booking. Includes seat selection, map view, and testimonials.",
     },
     {
-      title: "Portfolio Website",
+      title: "Technology scince Website",
       image: "/assets/image11.jpg",
       description:
         "A personal portfolio showcasing a developer's skills, past projects, blog, and contact information. Built with Next.js, Tailwind CSS, and Framer Motion animations.",
@@ -101,7 +101,7 @@ export default function Home() {
             content: `Our React + WordPress solutions offer blazing-fast news platforms with live tickers, category filters, and mobile optimization. Ideal for publishers and digital news startups targeting Indian or regional languages.`,
           },
           {
-            title: "Coworking Space Systems",
+            title: "Services Booking site",
             content: `We build smart coworking apps with hourly/daily seat bookings, map view, ratings, testimonials, and real-time availability. Tailored for tech parks, freelancers, and shared office chains.`,
           },
           {

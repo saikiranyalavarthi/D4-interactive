@@ -26,11 +26,11 @@ export default function Goals() {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white py-20 px-6 md:px-20 text-center relative">
+    <section className="bg-white text-black py-20 px-6 md:px-20 text-center relative">
       <h2 className="text-4xl font-bold mb-4">
         Our Goals at <span className="text-pink-400">D4 Interactive</span>
       </h2>
-      <p className="text-gray-300 max-w-xl mx-auto mb-12">
+      <p className="text-black max-w-xl mx-auto mb-12">
         Your business results reflect your digital ambitions — we align strategy
         with success.
       </p>
@@ -43,7 +43,7 @@ export default function Goals() {
             >
               {goal.icon}
             </div>
-            <p className="text-sm text-gray-100 mt-4 max-w-[12rem]">
+            <p className="text-sm text-black mt-4 max-w-[12rem]">
               {goal.title}
             </p>
           </div>

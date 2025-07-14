@@ -43,7 +43,7 @@ export default function Footer() {
               <FaFacebookF />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/d4interactive.in/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300"
@@ -52,7 +52,7 @@ export default function Footer() {
               <FaInstagram />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/d4-interactive-it-web-services-pvt-ltd/?originalSubdomain=in"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300"
