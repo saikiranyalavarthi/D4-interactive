@@ -10,6 +10,7 @@ import ServiceCategories from "./Components/ServiceCategories";
 import WeDiffer from "./Components/WeDiffer";
 import StatsSection from "./Components/StatsSection";
 import ScrollingText from "./Components/ScrollingText";
+import Youtubevideo from "./Components/Youtubevideo";
 
 export default function Home() {
   const services = [
@@ -157,7 +158,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-
+      <main>{/* <Youtubevideo /> */}</main>
       {/* Services Section */}
       <section className="py-16 px-6 md:px-20 bg-white text-black">
         <h2 className="text-4xl font-bold text-center text-blue-800 mb-12">
@@ -268,6 +269,148 @@ export default function Home() {
         >
           Contact Us
         </a>
+      </section>
+      <section className="py-20 px-6 md:px-20 bg-white">
+        <div className="max-w-5xl mx-auto space-y-6 text-gray-700 text-[16px] leading-relaxed">
+          <h2 className="text-3xl font-bold text-indigo-700 mb-6 text-center">
+            Expert Digital Marketing Services to Grow Your Business
+          </h2>
+
+          <p>
+            At <strong>D4 INTERACTIVE</strong>, we are a top-rated digital
+            marketing agency based in Hyderabad, delivering powerful online
+            marketing strategies to clients across India. Whether you&apos;re a
+            small business, e-commerce brand, doctor, or real estate agent, we
+            provide tailored solutions to help you rank higher on Google,
+            generate qualified leads, and grow revenue with the best digital
+            marketing services near you.
+          </p>
+
+          <p>
+            Our expert team specializes in{" "}
+            <strong>SEO (Search Engine Optimization)</strong>, Google Ads,
+            social media marketing, PPC advertising, and content marketing. As
+            one of the <em>best digital marketing companies in Hyderabad</em>,
+            we use performance-driven strategies backed by data to bring you
+            real results. If you&apos;re searching for a reliable{" "}
+            <strong>digital marketing agency near me</strong>, D4 INTERACTIVE is
+            your trusted partner.
+          </p>
+
+          <p>
+            We&apos;ve successfully delivered 250+ digital marketing projects
+            for industries like healthcare, technology, real estate, and
+            eCommerce. Whether it&apos;s a full-fledged{" "}
+            <strong>digital advertising campaign</strong>,{" "}
+            <strong>lead generation strategy</strong>, or{" "}
+            <strong>local SEO</strong> services, we ensure that every marketing
+            campaign delivers a high return on investment.
+          </p>
+
+          <h3 className="text-2xl font-semibold text-purple-700 mt-8">
+            Why Choose Our Digital Marketing Company?
+          </h3>
+
+          <ul className="list-disc pl-6 space-y-3">
+            <li>Google Certified Digital Marketers and SEO Experts</li>
+            <li>Customized Digital Marketing Plans for Your Business Goals</li>
+            <li>Affordable SEO Packages & Transparent Reporting</li>
+            <li>
+              High-converting Landing Pages & Conversion-focused Campaigns
+            </li>
+            <li>
+              Proven Results in Real Estate, Healthcare, Education, eCommerce,
+              and SaaS
+            </li>
+          </ul>
+
+          <p>
+            As a leading{" "}
+            <strong>SEO and Digital Marketing company in Hyderabad</strong>, we
+            focus on the long-term success of your brand. Our content strategies
+            include advanced keyword research, optimized blog writing, backlinks
+            building, technical SEO audits, and video marketing.
+          </p>
+
+          <h3 className="text-2xl font-semibold text-purple-700 mt-8">
+            All-in-One Digital Growth Services
+          </h3>
+
+          <p>
+            We offer a full spectrum of online marketing services including:
+          </p>
+
+          <ul className="list-disc pl-6 space-y-3">
+            <li>
+              <strong>SEO Services:</strong> On-page, Off-page, Technical SEO,
+              Local SEO
+            </li>
+            <li>
+              <strong>Google Ads (PPC):</strong> Pay-per-click, remarketing, and
+              conversion optimization
+            </li>
+            <li>
+              <strong>Social Media Marketing:</strong> Facebook, Instagram,
+              LinkedIn & YouTube campaigns
+            </li>
+            <li>
+              <strong>Content Marketing:</strong> Blogs, email campaigns,
+              copywriting
+            </li>
+            <li>
+              <strong>Lead Generation:</strong> Real estate, dental, eCommerce,
+              and B2B
+            </li>
+            <li>
+              <strong>Digital Strategy:</strong> Analytics setup, CRM,
+              automation & funnel building
+            </li>
+          </ul>
+
+          <p>
+            Looking for <em>freelance digital marketing experts</em>,{" "}
+            <em>marketing agencies near me</em>, or a{" "}
+            <strong>creative digital marketing company</strong> to scale your
+            brand online? You&apos;ve come to the right place.
+          </p>
+
+          <h3 className="text-2xl font-semibold text-purple-700 mt-8">
+            Industries We Serve
+          </h3>
+          <p>
+            From B2B startups to D2C brands, we&apos;ve helped businesses
+            across:
+          </p>
+
+          <ul className="list-disc pl-6 space-y-3">
+            <li>Real Estate Lead Generation</li>
+            <li>Healthcare & Doctor Booking Apps</li>
+            <li>Education & Coaching Institutes</li>
+            <li>eCommerce and Shopify Stores</li>
+            <li>Automobile & Mechanical Parts</li>
+            <li>IT Solutions & SaaS Products</li>
+          </ul>
+
+          <h3 className="text-2xl font-semibold text-purple-700 mt-8">
+            Let&apos;s Build Your Digital Future
+          </h3>
+          <p>
+            At D4 INTERACTIVE, we go beyond just ranking on Google. We create
+            end-to-end <strong>digital marketing strategies</strong> that
+            convert visitors into loyal customers. If you&apos;re looking for a{" "}
+            <strong>digital marketing consultant</strong> or a full-service{" "}
+            <strong>digital agency in Hyderabad</strong>, let&apos;s talk!
+          </p>
+
+          <p className="mt-6 text-center">
+            <a
+              href="/contact"
+              className="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
+            >
+              Get Free Consultation →
+            </a>
+          </p>
+        </div>
       </section>
     </div>
   );
