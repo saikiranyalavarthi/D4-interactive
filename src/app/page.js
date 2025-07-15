@@ -11,6 +11,7 @@ import WeDiffer from "./Components/WeDiffer";
 import StatsSection from "./Components/StatsSection";
 import ScrollingText from "./Components/ScrollingText";
 import Youtubevideo from "./Components/Youtubevideo";
+import HeroWithContactForm from "./Components/HeroWithContactForm";
 
 export default function Home() {
   const services = [
@@ -115,7 +116,8 @@ export default function Home() {
       </Head>
 
       {/* Hero Section */}
-      <header className="py-20 px-6 md:px-20 bg-white text-black">
+      <HeroWithContactForm />
+      {/* <header className="py-20 px-6 md:px-20 bg-white text-black">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl sm:text-5xl font-bold mb-4 animate-pulse text-indigo-700">
@@ -157,7 +159,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </header>
+      </header> */}
       <main>{/* <Youtubevideo /> */}</main>
       {/* Services Section */}
       <section className="py-16 px-6 md:px-20 bg-white text-black">
