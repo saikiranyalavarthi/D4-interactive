@@ -17,7 +17,7 @@ export default function HeroWithContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const whatsappMessage = `Name: ${formData.name}%0AEmail: ${formData.email}%0AService: ${formData.service}%0AMessage: ${formData.message}`;
-    window.open(`https://wa.me/91XXXXXXXXXX?text=${whatsappMessage}`, "_blank");
+    window.open(`https://wa.me/917675921117?text=${whatsappMessage}`, "_blank");
   };
 
   return (
