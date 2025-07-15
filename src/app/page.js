@@ -98,6 +98,10 @@ export default function Home() {
           name="keywords"
           content="Digital Marketing, SEO, Web Development, App Development, WordPress Development, India, D4 Interactive"
         />
+        <meta
+          name="google-site-verification"
+          content="lg0Dv0msTjtBoja6UwTnhLRaoT0_JEtd82Apsee2oFw"
+        />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://d4interactive.com/" />
