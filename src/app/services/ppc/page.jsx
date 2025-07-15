@@ -23,7 +23,7 @@ export default function PPCPage() {
       </Head>
 
       {/* Hero Section */}
-      <section className="py-16 text-center px-4 bg-gradient-to-r from-black via-[#AA2428] to-black text-white">
+      <section className="py-16 text-center px-4 bg-gradient-to-br from-purple-700 via-indigo-700 to-blue-700 text-white">
         <h1 className="text-4xl font-bold mb-4">
           Pay Per Click (PPC) Services
         </h1>

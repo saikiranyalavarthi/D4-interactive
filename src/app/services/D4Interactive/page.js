@@ -86,7 +86,7 @@ export default function ServicesPage() {
     <>
       <div className="font-sans">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white py-28 text-center px-4">
+        <section className="bg-gradient-to-br from-purple-700 via-indigo-700 to-blue-700 text-white py-28 text-center px-4">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">Our Services</h1>
           <p className="text-lg sm:text-xl max-w-3xl mx-auto">
             Digital solutions tailored to your business needs — SEO, marketing,

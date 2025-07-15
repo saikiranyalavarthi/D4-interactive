@@ -20,7 +20,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-gradient-to-r from-black via-[#AA2428] to-black shadow-lg px-6 py-4 text-white z-50 relative">
+    <nav className="bg-white shadow-lg px-6 py-4 text-black z-50 relative">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2">
           <Image
@@ -51,7 +51,7 @@ const Navbar = () => {
             <button className="flex items-center hover:underline">
               Services <ChevronDown size={16} className="ml-1" />
             </button>
-            <div className="absolute top-full left-0 mt-2 w-64 bg-gradient-to-r from-black via-[#AA2428] to-black text-white rounded-md shadow-lg opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 transform origin-top transition-all duration-300 z-40">
+            <div className="absolute top-full left-0 mt-2 w-64 bg-gradient-to-br from-purple-700 via-indigo-700 to-blue-700 text-white rounded-md shadow-lg opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 transform origin-top transition-all duration-300 z-40">
               {serviceLinks.map((link, i) => (
                 <Link
                   key={i}

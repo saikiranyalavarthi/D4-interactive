@@ -30,7 +30,7 @@ export default function SEOPage() {
       </Head>
 
       {/* 🔥 Gradient Hero Section */}
-      <div className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white text-center py-12 px-4">
+      <div className="bg-gradient-to-br from-purple-700 via-indigo-700 to-blue-700 text-white text-center py-12 px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           Search Engine Optimization (SEO) Services
         </h1>

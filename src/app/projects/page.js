@@ -57,7 +57,7 @@ export default function Home() {
       </Head>
 
       {/* Hero Section */}
-      <section className="py-20 px-6 md:px-20 text-center bg-gradient-to-r from-black via-[#AA2428] to-black text-white">
+      <section className="py-20 px-6 md:px-20 text-center bg-gradient-to-br from-purple-700 via-indigo-700 to-blue-700 text-white">
         <h1 className="text-4xl font-bold mb-4">Our Work &amp; Projects</h1>
         <p className="text-gray-200 max-w-3xl mx-auto">
           From scalable web platforms to mobile-first applications, here’s a

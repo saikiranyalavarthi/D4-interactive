@@ -16,14 +16,14 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-r from-black via-[#AA2428] to-black text-white pt-16 pb-8">
+    <footer className="bg-gradient-to-br from-purple-700 via-indigo-700 to-blue-700 text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Column 1: About with Logo */}
         <div>
           <Image
-            src="/assets/logo.png" // ✅ Correct path (must start with /)
+            src="/assets/logo1.png" // ✅ Correct path (must start with /)
             alt="D4 Interactive Logo"
-            width={140}
+            width={100}
             height={40}
             className="mb-4"
           />
