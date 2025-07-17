@@ -1,5 +1,5 @@
 "use client";
-
+import Script from "next/script";
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
@@ -117,6 +117,18 @@ export default function Home() {
         <meta property="og:url" content="https://d4interactive.com/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17264742053"
+        />
+        <Script id="google-ads" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-17264742053');
+        `}
+        </Script>
       </Head>
 
       {/* Hero Section */}
