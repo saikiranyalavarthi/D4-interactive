@@ -117,20 +117,19 @@ export default function Home() {
         <meta property="og:url" content="https://d4interactive.com/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17264742053"
-        />
-        <Script id="google-ads" strategy="afterInteractive">
-          {`
+      </Head>
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17264742053"
+      />
+      <Script id="google-ads" strategy="afterInteractive">
+        {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'AW-17264742053');
         `}
-        </Script>
-      </Head>
-
+      </Script>
       {/* Hero Section */}
       <HeroWithContactForm />
       {/* <header className="py-20 px-6 md:px-20 bg-white text-black">
