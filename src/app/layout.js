@@ -24,6 +24,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Next.js will automatically render metadata.title, etc. */}
+        <meta
+          name="google-site-verification"
+          content="lg0Dv0msTjtBoja6UwTnhLRaoT0_JEtd82Apsee2oFw"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-r from-black via-[#AA2428] to-black text-white min-h-screen`}
       >
