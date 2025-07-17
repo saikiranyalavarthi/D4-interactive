@@ -130,6 +130,11 @@ export default function Home() {
           gtag('config', 'AW-17264742053');
         `}
       </Script>
+
+      <meta
+        name="google-site-verification"
+        content="lg0Dv0msTjtBoja6UwTnhLRaoT0_JEtd82Apsee2oFw"
+      />
       {/* Hero Section */}
       <HeroWithContactForm />
       {/* <header className="py-20 px-6 md:px-20 bg-white text-black">

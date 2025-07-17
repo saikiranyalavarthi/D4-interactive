@@ -70,6 +70,14 @@ const Navbar = () => {
           <Link href="/blogs" className="hover:underline">
             Blogs
           </Link>
+          <Link href="/PrivacyPolicy" className="hover:underline">
+            PrivacyPolicy
+          </Link>
+
+          <Link href="/TermsAndConditions" className="hover:underline">
+            TermsAndConditions
+          </Link>
+
           <Link
             href="/contact"
             className="bg-white text-red-700 font-medium px-4 py-2 rounded-md hover:bg-gray-100 transition"
@@ -107,6 +115,15 @@ const Navbar = () => {
           <Link href="/blogs" onClick={toggleMenu}>
             Blogs
           </Link>
+
+          <Link href="/PrivacyPolicy" onClick={toggleMenu}>
+            PrivacyPolicy
+          </Link>
+
+          <Link href="/TermsAndConditions" onClick={toggleMenu}>
+            TermsAndConditions
+          </Link>
+
           <Link
             href="/contact"
             onClick={toggleMenu}
