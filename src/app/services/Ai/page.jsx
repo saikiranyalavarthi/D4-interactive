@@ -8,7 +8,10 @@ export default function AIPage() {
     <div className="font-sans min-h-screen text-black">
       {/* SEO Meta Tags */}
       <Head>
-        <title>AI & Machine Learning Services | D4 Interactive Hyderabad</title>
+        <title>
+          AI Automachine Solutions & Machine Learning Services | D4 Interactive
+          Hyderabad
+        </title>
         <meta
           name="description"
           content="Unlock the power of AI with D4 Interactive. From predictive analytics to NLP and automation, we provide custom AI solutions in Hyderabad. Contact us today."
