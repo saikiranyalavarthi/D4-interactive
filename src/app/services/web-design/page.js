@@ -1,7 +1,6 @@
 "use client";
 
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function WebDesigningPage() {
@@ -58,15 +57,23 @@ export default function WebDesigningPage() {
           </h3>
 
           <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+            {/* ✅ Embedded YouTube Video */}
             <div className="md:w-1/2">
-              <Image
-                src="/assets/image16.jpg"
-                alt="Web Designing"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
+              <div className="w-full aspect-video rounded-lg shadow-lg overflow-hidden">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/twWMv8fF15k?si=65ML9kjNFOH3YHBh"
+                  title="Web Designing Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
+              </div>
             </div>
+
+            {/* ✅ Supporting Text */}
             <div className="md:w-1/2">
               <p className="mb-4">
                 <strong>

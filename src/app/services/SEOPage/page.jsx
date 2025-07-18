@@ -2,7 +2,6 @@
 
 import Head from "next/head";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function SEOPage() {
@@ -70,14 +69,20 @@ export default function SEOPage() {
             </Link>
           </div>
 
+          {/* ✅ YouTube Video Instead of Image */}
           <div className="flex-1">
-            <Image
-              src="/assets/image14.jpg"
-              alt="SEO Services Illustration"
-              width={600}
-              height={400}
-              className="w-full h-auto object-contain rounded-lg shadow-md"
-            />
+            <div className="w-full aspect-video rounded-lg shadow-md overflow-hidden">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/K-s1JrrhR0E?si=aPGQkAyA8yQNakIO"
+                title="SEO Services Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
+            </div>
           </div>
         </motion.div>
 

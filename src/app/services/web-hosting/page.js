@@ -1,7 +1,6 @@
 "use client";
 
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function WebHostingPage() {
@@ -81,14 +80,21 @@ export default function WebHostingPage() {
               performance so you can focus on growing your business.
             </p>
           </div>
+
+          {/* ✅ Replaced Image with YouTube Video */}
           <div className="md:w-1/2">
-            <Image
-              src="/assets/image17.jpg"
-              alt="Web Hosting Services"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-md"
-            />
+            <div className="w-full aspect-video rounded-lg shadow-md overflow-hidden">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/twWMv8fF15k?si=d3d7L09rmRxkHDLB"
+                title="Web Hosting Services Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
+            </div>
           </div>
         </div>
 

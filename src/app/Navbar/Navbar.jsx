@@ -12,6 +12,10 @@ const serviceLinks = [
   { name: "Web Designing", href: "/services/web-design" },
   { name: "Web Development", href: "/services/web-development" },
   { name: "Web Hosting", href: "/services/web-hosting" },
+
+  { name: "Mobile App Development", href: "/services/mobile-app-development" },
+  { name: "AI Development", href: "/services/Ai" },
+  { name: "Web Crawling", href: "/services/web-crawling" },
   { name: "D4 Interactive", href: "/services/D4Interactive" },
 ];
 

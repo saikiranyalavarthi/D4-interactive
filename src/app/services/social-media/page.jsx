@@ -1,7 +1,6 @@
 "use client";
 
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function SocialMediaMarketingPage() {
@@ -63,14 +62,20 @@ export default function SocialMediaMarketingPage() {
             </Link>
           </div>
 
+          {/* ✅ Embedded YouTube Video Replacing Image */}
           <div className="flex-1">
-            <Image
-              src="/assets/image15.jpg"
-              alt="Social Media Marketing Illustration"
-              width={600}
-              height={400}
-              className="w-full h-auto object-contain rounded-md shadow"
-            />
+            <div className="w-full aspect-video rounded-lg shadow-md overflow-hidden">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/yDt2ivKK_JI"
+                title="Social Media Marketing Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
+            </div>
           </div>
         </div>
 

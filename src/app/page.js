@@ -131,10 +131,6 @@ export default function Home() {
         `}
       </Script>
 
-      <meta
-        name="google-site-verification"
-        content="lg0Dv0msTjtBoja6UwTnhLRaoT0_JEtd82Apsee2oFw"
-      />
       {/* Hero Section */}
       <HeroWithContactForm />
       {/* <header className="py-20 px-6 md:px-20 bg-white text-black">
@@ -227,13 +223,18 @@ export default function Home() {
             client relationships based on trust and performance.
           </p>
         </div>
-        <Image
-          src="/assets/image5.jpg"
-          alt="About D4 Interactive"
-          width={600}
-          height={700}
-          className="rounded-2xl shadow-lg"
-        />
+
+        {/* Embed YouTube video */}
+        <div className="w-full min-h-[300px] rounded-2xl overflow-hidden shadow-lg">
+          <iframe
+            src="https://www.youtube.com/embed/yDt2ivKK_JI"
+            title="D4 Interactive Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full min-h-[300px]"
+          ></iframe>
+        </div>
       </section>
 
       <main>
