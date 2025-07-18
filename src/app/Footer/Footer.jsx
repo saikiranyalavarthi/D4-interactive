@@ -12,16 +12,29 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
+const serviceLinks = [
+  { name: "Pay Per Click Advertising", href: "/services/ppc" },
+  { name: "Search Engine Optimization", href: "/services/SEOPage" },
+  { name: "Social Media Marketing", href: "/services/social-media" },
+  { name: "Web Designing", href: "/services/web-design" },
+  { name: "Web Development", href: "/services/web-development" },
+  { name: "Web Hosting", href: "/services/web-hosting" },
+  { name: "Mobile App Development", href: "/services/mobile-app-development" },
+  { name: "AI Development", href: "/services/Ai" },
+  { name: "Web Crawling", href: "/services/web-crawling" },
+  { name: "D4 Interactive", href: "/services/D4Interactive" },
+];
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <footer className="bg-gradient-to-br from-purple-700 via-indigo-700 to-blue-700 text-white pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Column 1: About with Logo */}
         <div>
           <Image
-            src="/assets/logo1.png" // ✅ Correct path (must start with /)
+            src="/assets/logo1.png"
             alt="D4 Interactive Logo"
             width={100}
             height={40}
@@ -92,7 +105,24 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Column 3: Contact Details */}
+        {/* Column 3: Services */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Our Services</h3>
+          <ul className="space-y-2 text-sm">
+            {serviceLinks.map(({ name, href }) => (
+              <li key={name}>
+                <Link
+                  href={href}
+                  className="hover:text-gray-300 hover:underline transition"
+                >
+                  {name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Column 4: Contact Details */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
           <ul className="space-y-3 text-sm text-gray-200">
