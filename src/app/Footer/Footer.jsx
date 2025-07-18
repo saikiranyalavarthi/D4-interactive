@@ -22,7 +22,6 @@ const serviceLinks = [
   { name: "Mobile App Development", href: "/services/mobile-app-development" },
   { name: "AI Development", href: "/services/Ai" },
   { name: "Web Crawling", href: "/services/web-crawling" },
-  { name: "D4 Interactive", href: "/services/D4Interactive" },
 ];
 
 export default function Footer() {
