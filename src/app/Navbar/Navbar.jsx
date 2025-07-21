@@ -19,6 +19,16 @@ const serviceLinks = [
   { name: "D4 Interactive", href: "/services/D4Interactive" },
 ];
 
+const industriesLinks = [
+  { name: "Ecommerce", href: "/Industries/ecommerce" },
+  { name: "Education", href: "/Industries/education" },
+  { name: "Agriculture", href: "/Industries/agriculture" },
+  { name: "Hospitality", href: "/Industries/hospitality" },
+  { name: "Retail", href: "/Industries/retail" },
+  { name: "Real Estate", href: "/Industries/real-estate" },
+  { name: "Information Technology", href: "/Industries/it" },
+  { name: "Travel", href: "/Industries/travel" },
+];
 // ✅ Fixed href to match actual folder casing
 const policyLinks = [
   { name: "Privacy Policy", href: "/Policy/PrivacyPolicy" },
@@ -77,6 +87,25 @@ const Navbar = () => {
             </div>
           </div>
 
+          {/* Industries Dropdown */}
+          <div className="relative group">
+            <button className="flex items-center hover:underline">
+              Industries <ChevronDown size={16} className="ml-1" />
+            </button>
+            <div className="absolute top-full left-0 mt-2 w-[300px] bg-gradient-to-br from-purple-700 via-indigo-700 to-blue-700 text-white rounded-md shadow-lg opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 transform origin-top transition-all duration-300 z-40 p-4">
+              <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+                {industriesLinks.map((link, i) => (
+                  <Link
+                    key={i}
+                    href={link.href}
+                    className="hover:underline hover:text-yellow-300 transition"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
           {/* Policy Dropdown */}
           <div className="relative group">
             <button className="flex items-center hover:underline">
@@ -94,7 +123,6 @@ const Navbar = () => {
               ))}
             </div>
           </div>
-
           <Link href="/projects" className="hover:underline">
             Projects
           </Link>
@@ -126,6 +154,19 @@ const Navbar = () => {
             </summary>
             <div className="pl-4 mt-2 flex flex-col space-y-2">
               {serviceLinks.map((link, i) => (
+                <Link key={i} href={link.href} onClick={toggleMenu}>
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+          </details>
+
+          <details className="group cursor-pointer">
+            <summary className="flex items-center justify-between cursor-pointer list-none mt-2">
+              <span>Industries</span> <ChevronDown size={16} />
+            </summary>
+            <div className="pl-4 mt-2 flex flex-col space-y-2">
+              {industriesLinks.map((link, i) => (
                 <Link key={i} href={link.href} onClick={toggleMenu}>
                   {link.name}
                 </Link>
