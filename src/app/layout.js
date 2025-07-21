@@ -39,6 +39,7 @@ export default function RootLayout({ children }) {
 
         <FloatingButtons />
         <Goals />
+
         <Footer />
       </body>
     </html>

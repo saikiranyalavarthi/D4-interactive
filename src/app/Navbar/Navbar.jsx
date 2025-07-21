@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const serviceLinks = [
   { name: "Pay Per Click Advertising", href: "/services/ppc" },
@@ -130,6 +131,16 @@ const Navbar = () => {
           <Link href="/blogs" className="hover:underline">
             Blogs
           </Link>
+          <a
+            href="https://wa.me/917675921117"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 bg-green-600 text-white font-medium px-4 py-2 rounded-md hover:bg-green-500 transition justify-center"
+          >
+            <FaWhatsapp size={20} />
+            <span>+91 7675921117</span>
+          </a>
+
           <Link
             href="/contact"
             className="bg-blue-600 text-white font-medium px-4 py-2 rounded-md hover:bg-blue-400 transition"
@@ -194,6 +205,16 @@ const Navbar = () => {
           <Link href="/blogs" onClick={toggleMenu}>
             Blogs
           </Link>
+          <a
+            href="https://wa.me/917675921117"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 bg-green-600 text-white font-medium px-4 py-2 rounded-md hover:bg-green-500 transition"
+          >
+            <FaWhatsapp size={20} />
+            <span>+91 7675921117</span>
+          </a>
+
           <Link
             href="/contact"
             onClick={toggleMenu}

@@ -14,6 +14,7 @@ import Youtubevideo from "./Components/Youtubevideo";
 import HeroWithContactForm from "./Components/HeroWithContactForm";
 import BannerSection from "./Components/BannerSection";
 import ProcessSteps from "./Components/ProcessSteps";
+import Slideranimation from "./Components/Slideranimation";
 
 export default function Home() {
   const services = [
