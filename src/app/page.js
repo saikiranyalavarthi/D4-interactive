@@ -16,6 +16,8 @@ import BannerSection from "./Components/BannerSection";
 import ProcessSteps from "./Components/ProcessSteps";
 import SalesProcess from "./Components/SalesProcess";
 
+import { motion } from "framer-motion";
+
 export default function Home() {
   const services = [
     {
@@ -287,31 +289,51 @@ export default function Home() {
 
       <ProcessSteps />
 
-      <section className="py-16 px-6 md:px-20 bg-blue-50 text-center text-black">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-4">
+      {/* Blinking animation with hover pause */}
+
+      <section className="py-16 px-6 md:px-20 bg-gradient-to-r from-blue-100 via-indigo-100 to-purple-100 text-center text-black relative overflow-hidden">
+        <motion.h2
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-3xl md:text-4xl font-bold text-blue-700 mb-4"
+        >
           Ready to Grow Your Business?
-        </h2>
+        </motion.h2>
 
-        <p className="text-gray-700 max-w-2xl mx-auto mb-6 text-lg">
-          Whether you're just starting or scaling up, we're here to craft
-          tailored digital solutions that deliver real results. Let’s connect
-          and build something amazing together.
-        </p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="text-gray-700 max-w-2xl mx-auto mb-6 text-lg"
+        >
+          Whether you&apos;re just starting or scaling up, we&apos;re here to
+          craft tailored digital solutions that deliver real results.
+          Let&rsquo;s connect and build something amazing together.
+        </motion.p>
 
-        <p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="text-gray-600 max-w-xl mx-auto mb-10 text-base"
+        >
           We specialize in website development, digital marketing, SEO, app
           development, and complete branding — everything you need to succeed
-          online. Let&rsquo;s connect and build something amazing together.
-        </p>
+          online.
+        </motion.p>
 
-        <a
-          href="/contact"
-          className="inline-block bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-indigo-700 transition blink-button"
-        >
-          Contact Us
-        </a>
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          {/* Contact Us (Blinking) */}
+          <a
+            href="/contact"
+            className="blink-button inline-block bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-indigo-700 transition"
+          >
+            Contact Us
+          </a>
+        </div>
 
-        {/* Blinking animation with hover pause */}
+        {/* Blink animation styles */}
         <style jsx>{`
           @keyframes blinker {
             0%,
