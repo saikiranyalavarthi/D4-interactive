@@ -298,10 +298,10 @@ export default function Home() {
           and build something amazing together.
         </p>
 
-        <p className="text-gray-600 max-w-xl mx-auto mb-8 text-base">
+        <p>
           We specialize in website development, digital marketing, SEO, app
           development, and complete branding — everything you need to succeed
-          online.
+          online. Let&rsquo;s connect and build something amazing together.
         </p>
 
         <a
