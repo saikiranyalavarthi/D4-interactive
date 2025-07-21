@@ -12,6 +12,8 @@ import StatsSection from "./Components/StatsSection";
 import ScrollingText from "./Components/ScrollingText";
 import Youtubevideo from "./Components/Youtubevideo";
 import HeroWithContactForm from "./Components/HeroWithContactForm";
+import BannerSection from "./Components/BannerSection";
+import ProcessSteps from "./Components/ProcessSteps";
 
 export default function Home() {
   const services = [
@@ -272,6 +274,7 @@ export default function Home() {
         ))}
       </section>
 
+      <BannerSection />
       <WeDiffer />
       <StatsSection />
       <AnimatedServices />
@@ -293,6 +296,7 @@ export default function Home() {
           Contact Us
         </a>
       </section>
+      <ProcessSteps />
       <section className="py-20 px-6 md:px-20 bg-white">
         <div className="max-w-5xl mx-auto space-y-6 text-gray-700 text-[16px] leading-relaxed">
           <h2 className="text-3xl font-bold text-indigo-700 mb-6 text-center">

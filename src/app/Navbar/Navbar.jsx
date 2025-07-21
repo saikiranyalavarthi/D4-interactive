@@ -103,7 +103,7 @@ const Navbar = () => {
           </Link>
           <Link
             href="/contact"
-            className="bg-white text-red-700 font-medium px-4 py-2 rounded-md hover:bg-gray-100 transition"
+            className="bg-blue-600 text-white font-medium px-4 py-2 rounded-md hover:bg-blue-400 transition"
           >
             Get in Touch
           </Link>
