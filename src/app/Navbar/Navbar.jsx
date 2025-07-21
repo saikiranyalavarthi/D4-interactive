@@ -12,7 +12,6 @@ const serviceLinks = [
   { name: "Web Designing", href: "/services/web-design" },
   { name: "Web Development", href: "/services/web-development" },
   { name: "Web Hosting", href: "/services/web-hosting" },
-
   { name: "Mobile App Development", href: "/services/mobile-app-development" },
   { name: "AI Automachine", href: "/services/Ai" },
   { name: "Web Crawling", href: "/services/web-crawling" },
@@ -29,7 +28,7 @@ const industriesLinks = [
   { name: "Information Technology", href: "/Industries/it" },
   { name: "Travel", href: "/Industries/travel" },
 ];
-// ✅ Fixed href to match actual folder casing
+
 const policyLinks = [
   { name: "Privacy Policy", href: "/Policy/PrivacyPolicy" },
   { name: "Terms and Conditions", href: "/Policy/TermsAndConditions" },
@@ -106,6 +105,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+
           {/* Policy Dropdown */}
           <div className="relative group">
             <button className="flex items-center hover:underline">
@@ -123,6 +123,7 @@ const Navbar = () => {
               ))}
             </div>
           </div>
+
           <Link href="/projects" className="hover:underline">
             Projects
           </Link>
@@ -140,7 +141,7 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="md:hidden mt-4 flex flex-col space-y-4 px-2">
+        <div className="md:hidden mt-4 flex flex-col space-y-4 px-4 py-6 bg-gradient-to-br from-purple-700 via-indigo-700 to-blue-700 text-white rounded-md shadow-lg">
           <Link href="/" onClick={toggleMenu}>
             Home
           </Link>
@@ -196,7 +197,7 @@ const Navbar = () => {
           <Link
             href="/contact"
             onClick={toggleMenu}
-            className="bg-white text-red-700 font-medium px-4 py-2 rounded-md hover:bg-gray-100 transition text-center"
+            className="bg-white text-blue-700 font-medium px-4 py-2 rounded-md hover:bg-gray-100 transition text-center"
           >
             Get in Touch
           </Link>
