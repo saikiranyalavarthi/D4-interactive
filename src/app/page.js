@@ -14,7 +14,7 @@ import Youtubevideo from "./Components/Youtubevideo";
 import HeroWithContactForm from "./Components/HeroWithContactForm";
 import BannerSection from "./Components/BannerSection";
 import ProcessSteps from "./Components/ProcessSteps";
-import Slideranimation from "./Components/Slideranimation";
+import SalesProcess from "./Components/SalesProcess";
 
 export default function Home() {
   const services = [
@@ -276,28 +276,63 @@ export default function Home() {
       </section>
 
       <BannerSection />
+      <SalesProcess />
       <WeDiffer />
       <StatsSection />
       <AnimatedServices />
       <ServicesSection />
-      <ScrollingText />
+      {/* <ScrollingText /> */}
 
       {/* Contact CTA */}
-      <section className="py-16 px-6 md:px-20 bg-blue text-center text-black">
-        <h2 className="text-3xl font-semibold text-blue-700 mb-6">
-          Get in Touch
+
+      <ProcessSteps />
+
+      <section className="py-16 px-6 md:px-20 bg-blue-50 text-center text-black">
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-4">
+          Ready to Grow Your Business?
         </h2>
-        <p className="text-gray-700 max-w-2xl mx-auto mb-8">
-          Let’s connect and build something amazing together.
+
+        <p className="text-gray-700 max-w-2xl mx-auto mb-6 text-lg">
+          Whether you're just starting or scaling up, we're here to craft
+          tailored digital solutions that deliver real results. Let’s connect
+          and build something amazing together.
         </p>
+
+        <p className="text-gray-600 max-w-xl mx-auto mb-8 text-base">
+          We specialize in website development, digital marketing, SEO, app
+          development, and complete branding — everything you need to succeed
+          online.
+        </p>
+
         <a
           href="/contact"
-          className="inline-block bg-blue-700 text-white px-6 py-3 rounded hover:bg-indigo-700 transition"
+          className="inline-block bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-indigo-700 transition blink-button"
         >
           Contact Us
         </a>
+
+        {/* Blinking animation with hover pause */}
+        <style jsx>{`
+          @keyframes blinker {
+            0%,
+            100% {
+              opacity: 1;
+            }
+            50% {
+              opacity: 0;
+            }
+          }
+
+          .blink-button {
+            animation: blinker 1s linear infinite;
+          }
+
+          .blink-button:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
       </section>
-      <ProcessSteps />
+
       <section className="py-20 px-6 md:px-20 bg-white">
         <div className="max-w-5xl mx-auto space-y-6 text-gray-700 text-[16px] leading-relaxed">
           <h2 className="text-3xl font-bold text-indigo-700 mb-6 text-center">

@@ -4,6 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import ExperienceSection from "../Components/ExperienceSection";
+import SalesProcess from "../Components/SalesProcess";
 
 export default function About() {
   const whyChooseUs = [
@@ -173,7 +174,7 @@ export default function About() {
           results-driven execution.
         </p>
       </section>
-
+      <SalesProcess />
       {/* Why Choose Us */}
       <section className="py-16 px-6 md:px-20 text-center bg-white">
         <h2 className="text-3xl font-semibold text-indigo-800 mb-6">
