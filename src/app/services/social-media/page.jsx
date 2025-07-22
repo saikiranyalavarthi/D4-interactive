@@ -27,7 +27,7 @@ export default function SocialMediaMarketingPage() {
       </Head>
 
       {/* 🔥 Gradient Heading Section */}
-      <div className="bg-gradient-to-br from-purple-700 via-indigo-700 to-blue-700 text-white text-center py-12 px-4">
+      <div className="bg-gradient-to-b from-yellow-400 to-orange-700 text-white text-center py-12 px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           Social Media Marketing Services
         </h1>

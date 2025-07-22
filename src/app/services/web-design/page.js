@@ -25,7 +25,7 @@ export default function WebDesigningPage() {
       </Head>
 
       {/* 🔥 Hero Section - Gradient Background */}
-      <div className="bg-gradient-to-br from-purple-700 via-indigo-700 to-blue-700 text-white text-center py-12 px-4">
+      <div className="bg-gradient-to-b from-rose-500 to-purple-800 text-white text-center py-12 px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           Web Designing Services
         </h1>
