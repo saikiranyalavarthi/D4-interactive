@@ -28,12 +28,12 @@ const steps = [
   },
   {
     step: "Step 04",
-    title: "Deliver proposal",
+    title: "Get proposal",
     icon: <FaFileAlt size={40} />,
   },
   {
     step: "Step 05",
-    title: "Negotiate",
+    title: "Make a Contract work with the client",
     icon: <FaUserTie size={40} />,
   },
   {
@@ -50,7 +50,7 @@ export default function SalesProcess() {
         How We Work
       </h3>
       <h2 className="text-4xl font-bold text-gray-900 mb-12">
-        Our Sales Process
+        Our Client Process
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-6 gap-6 max-w-7xl mx-auto px-4">

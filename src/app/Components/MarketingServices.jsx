@@ -104,7 +104,7 @@ const cardVariants = {
   visible: (i) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.2, duration: 0.6, ease: "easeOut" },
+    transition: { delay: i * 0.15, duration: 0.5 },
   }),
 };
 
@@ -113,7 +113,7 @@ export default function MarketingServices() {
     <motion.section
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: false, amount: 0.1 }}
       variants={sectionVariants}
       className="py-16 px-4 md:px-12 bg-gradient-to-br from-gray-50 via-white to-gray-100"
     >
@@ -121,30 +121,32 @@ export default function MarketingServices() {
         Digital Marketing Services That Actually Work
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <motion.div
             key={index}
             custom={index}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: true }}
             variants={cardVariants}
             whileHover={{ scale: 1.03 }}
-            className="bg-white relative p-[2px] rounded-2xl overflow-hidden group transition-transform duration-300 shadow-lg"
+            className="bg-white relative p-[2px] rounded-2xl overflow-hidden group transition-transform duration-300 shadow-lg min-h-full"
           >
-            {/* Animated Gradient Border */}
-            <div className="absolute inset-0 z-0 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 animate-pulse opacity-30 group-hover:opacity-60"></div>
+            {/* Animated Border */}
+            <div className="absolute inset-0 z-0 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 opacity-20 group-hover:opacity-50"></div>
 
             {/* Card Content */}
-            <div className="relative z-10 bg-white rounded-2xl overflow-hidden flex flex-col h-full">
-              <Image
-                src={service.image}
-                alt={service.title}
-                width={500}
-                height={300}
-                className="w-full h-52 object-cover"
-              />
+            <div className="relative z-10 bg-white rounded-2xl flex flex-col h-full">
+              <div className="relative w-full h-48 sm:h-56 md:h-52">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-t-2xl"
+                />
+              </div>
               <div className="p-6 flex flex-col flex-grow justify-between">
                 <div>
                   <h3 className="text-xl font-bold text-blue-700 mb-2">
@@ -167,7 +169,7 @@ export default function MarketingServices() {
                   href={service.link}
                   className="mt-4 inline-block text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-full text-sm font-medium transition"
                 >
-                  Learn More About This Service
+                  Learn More
                 </a>
               </div>
             </div>

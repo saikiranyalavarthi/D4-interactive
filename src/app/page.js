@@ -19,6 +19,9 @@ import SalesProcess from "./Components/SalesProcess";
 import { motion } from "framer-motion";
 import MarketingServices from "./Components/MarketingServices";
 import SuccessStories from "./Components/SuccessStories";
+import CallToActionSection from "./Components/CallToActionSection";
+import IndustriesSection from "./Components/IndustriesSection";
+import DigitalSuccessBanner from "./Components/DigitalSuccessBanner";
 
 export default function Home() {
   const services = [
@@ -319,6 +322,7 @@ export default function Home() {
       </section>
       <MarketingServices />
       <SuccessStories />
+      <CallToActionSection />
       {/* Projects Section */}
       <section className="py-20 px-6 md:px-20 bg-white text-center text-black">
         <h1 className="text-4xl font-bold text-indigo-700 mb-4">
@@ -348,6 +352,7 @@ export default function Home() {
           </div>
         ))}
       </section>
+      <IndustriesSection />
       <section className="py-20 px-6 md:px-20 bg-white">
         <div className="max-w-5xl mx-auto space-y-6 text-gray-700 text-[16px] leading-relaxed">
           <h2 className="text-3xl font-bold text-indigo-700 mb-6 text-center">
@@ -490,6 +495,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <DigitalSuccessBanner />
     </div>
   );
 }
