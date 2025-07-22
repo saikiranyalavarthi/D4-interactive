@@ -17,6 +17,7 @@ import ProcessSteps from "./Components/ProcessSteps";
 import SalesProcess from "./Components/SalesProcess";
 
 import { motion } from "framer-motion";
+import MarketingServices from "./Components/MarketingServices";
 
 export default function Home() {
   const services = [
@@ -354,7 +355,7 @@ export default function Home() {
           }
         `}</style>
       </section>
-
+      <MarketingServices />
       <section className="py-20 px-6 md:px-20 bg-white">
         <div className="max-w-5xl mx-auto space-y-6 text-gray-700 text-[16px] leading-relaxed">
           <h2 className="text-3xl font-bold text-indigo-700 mb-6 text-center">

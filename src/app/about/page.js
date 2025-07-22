@@ -148,7 +148,7 @@ export default function About() {
         </div>
 
         <Image
-          src="/assets/image5.jpg"
+          src="/assets/image23.png"
           alt="About D4 Interactive"
           width={600}
           height={700}
