@@ -18,6 +18,7 @@ import SalesProcess from "./Components/SalesProcess";
 
 import { motion } from "framer-motion";
 import MarketingServices from "./Components/MarketingServices";
+import SuccessStories from "./Components/SuccessStories";
 
 export default function Home() {
   const services = [
@@ -136,7 +137,6 @@ export default function Home() {
           gtag('config', 'AW-17264742053');
         `}
       </Script>
-
       {/* Hero Section */}
       <HeroWithContactForm />
       {/* <header className="py-20 px-6 md:px-20 bg-white text-black">
@@ -209,11 +209,9 @@ export default function Home() {
           ))}
         </div>
       </section>
-
       <ServiceCategories />
-
       {/* About Section */}
-      <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 items-center gap-12 bg-white text-black">
+      {/* <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 items-center gap-12 bg-white text-black">
         <div>
           <h2 className="text-3xl font-semibold text-indigo-700 mb-4">About</h2>
           <p className="text-gray-700 mb-4">
@@ -231,7 +229,7 @@ export default function Home() {
         </div>
 
         {/* Embed YouTube video */}
-        <div className="w-full min-h-[300px] rounded-2xl overflow-hidden shadow-lg">
+      {/* <div className="w-full min-h-[300px] rounded-2xl overflow-hidden shadow-lg">
           <iframe
             src="https://www.youtube.com/embed/yDt2ivKK_JI"
             title="D4 Interactive Video"
@@ -241,43 +239,11 @@ export default function Home() {
             className="w-full min-h-[300px]"
           ></iframe>
         </div>
-      </section>
-
+      </section> */}{" "}
+      */
       <main>
         <ExperienceSection />
       </main>
-
-      {/* Projects Section */}
-      <section className="py-20 px-6 md:px-20 bg-white text-center text-black">
-        <h1 className="text-4xl font-bold text-indigo-700 mb-4">
-          Our Work & Projects
-        </h1>
-        <p className="text-gray-700 max-w-3xl mx-auto">
-          We craft digital experiences across industries...
-        </p>
-      </section>
-
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-20 pb-20 bg-white text-black">
-        {projects.map((proj, index) => (
-          <div
-            key={index}
-            className="bg-white text-black p-6 rounded-xl shadow-md"
-          >
-            <Image
-              src={proj.image}
-              alt={proj.title}
-              width={400}
-              height={300}
-              className="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 className="text-lg font-semibold text-indigo-700 mb-2">
-              {proj.title}
-            </h3>
-            <p className="text-gray-700 text-sm">{proj.description}</p>
-          </div>
-        ))}
-      </section>
-
       <BannerSection />
       <SalesProcess />
       <WeDiffer />
@@ -285,13 +251,9 @@ export default function Home() {
       <AnimatedServices />
       <ServicesSection />
       {/* <ScrollingText /> */}
-
       {/* Contact CTA */}
-
       <ProcessSteps />
-
       {/* Blinking animation with hover pause */}
-
       <section className="py-16 px-6 md:px-20 bg-gradient-to-r from-blue-100 via-indigo-100 to-purple-100 text-center text-black relative overflow-hidden">
         <motion.h2
           initial={{ opacity: 0, y: -30 }}
@@ -356,6 +318,36 @@ export default function Home() {
         `}</style>
       </section>
       <MarketingServices />
+      <SuccessStories />
+      {/* Projects Section */}
+      <section className="py-20 px-6 md:px-20 bg-white text-center text-black">
+        <h1 className="text-4xl font-bold text-indigo-700 mb-4">
+          Our Work & Projects
+        </h1>
+        <p className="text-gray-700 max-w-3xl mx-auto">
+          We craft digital experiences across industries...
+        </p>
+      </section>
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-20 pb-20 bg-white text-black">
+        {projects.map((proj, index) => (
+          <div
+            key={index}
+            className="bg-white text-black p-6 rounded-xl shadow-md"
+          >
+            <Image
+              src={proj.image}
+              alt={proj.title}
+              width={400}
+              height={300}
+              className="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 className="text-lg font-semibold text-indigo-700 mb-2">
+              {proj.title}
+            </h3>
+            <p className="text-gray-700 text-sm">{proj.description}</p>
+          </div>
+        ))}
+      </section>
       <section className="py-20 px-6 md:px-20 bg-white">
         <div className="max-w-5xl mx-auto space-y-6 text-gray-700 text-[16px] leading-relaxed">
           <h2 className="text-3xl font-bold text-indigo-700 mb-6 text-center">
