@@ -71,9 +71,15 @@ export default function IndustriesSection() {
               key={index}
               className={`bg-gradient-to-tr ${item.color} text-white rounded-2xl p-6 shadow-lg transition-transform hover:scale-105`}
             >
-              <div className="mb-4">{item.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              <p className="text-sm opacity-90">{item.description}</p>
+              <div className="flex justify-center items-center mb-4">
+                {item.icon}
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-center">
+                {item.title}
+              </h3>
+              <p className="text-sm opacity-90 text-center">
+                {item.description}
+              </p>
             </div>
           ))}
         </div>

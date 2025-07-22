@@ -323,7 +323,7 @@ export default function Home() {
       <SuccessStories />
       <CallToActionSection />
       {/* Projects Section */}
-      <section className="py-20 px-6 md:px-20 bg-white text-center text-black">
+      {/* <section className="py-20 px-6 md:px-20 bg-white text-center text-black">
         <h1 className="text-4xl font-bold text-indigo-700 mb-4">
           Our Work & Projects
         </h1>
@@ -350,7 +350,7 @@ export default function Home() {
             <p className="text-gray-700 text-sm">{proj.description}</p>
           </div>
         ))}
-      </section>
+      </section> */}
       <IndustriesSection />
       <section className="py-20 px-6 md:px-20 bg-white">
         <div className="max-w-5xl mx-auto space-y-6 text-gray-700 text-[16px] leading-relaxed">

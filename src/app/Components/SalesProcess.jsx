@@ -18,12 +18,12 @@ const steps = [
   },
   {
     step: "Step 02",
-    title: "Analyse prospect's needs",
+    title: "Reaserch Project",
     icon: <FaSearch size={40} />,
   },
   {
     step: "Step 03",
-    title: "Pitch Your Product",
+    title: "project anyalysis",
     icon: <FaDesktop size={40} />,
   },
   {
@@ -33,12 +33,12 @@ const steps = [
   },
   {
     step: "Step 05",
-    title: "Make a Contract work with the client",
+    title: "Start Project",
     icon: <FaUserTie size={40} />,
   },
   {
     step: "Step 06",
-    title: "Close The Sale",
+    title: "Project Completion",
     icon: <FaRegHandshake size={40} />,
   },
 ];
