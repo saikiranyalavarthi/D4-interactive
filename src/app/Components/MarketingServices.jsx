@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { FaCheckCircle } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const services = [
   {
@@ -90,54 +91,89 @@ const services = [
   },
 ];
 
+const sectionVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 1, ease: "easeOut" },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.2, duration: 0.6, ease: "easeOut" },
+  }),
+};
+
 export default function MarketingServices() {
   return (
-    <section className="py-16 px-4 md:px-12 bg-gray-50">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={sectionVariants}
+      className="py-16 px-4 md:px-12 bg-gradient-to-br from-gray-50 via-white to-gray-100"
+    >
       <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
         Digital Marketing Services That Actually Work
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {services.map((service, index) => (
-          <div
+          <motion.div
             key={index}
-            className="bg-white shadow-xl rounded-2xl overflow-hidden flex flex-col"
+            custom={index}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={cardVariants}
+            whileHover={{ scale: 1.03 }}
+            className="bg-white relative p-[2px] rounded-2xl overflow-hidden group transition-transform duration-300 shadow-lg"
           >
-            <Image
-              src={service.image}
-              alt={service.title}
-              width={500}
-              height={300}
-              className="w-full h-52 object-cover"
-            />
-            <div className="p-6 flex flex-col flex-grow justify-between">
-              <div>
-                <h3 className="text-xl font-bold text-blue-700 mb-2">
-                  {service.title}
-                </h3>
-                <p className="text-gray-700 mb-3">{service.description}</p>
-                <p className="text-green-600 font-medium mb-3">
-                  {service.stats}
-                </p>
-                <ul className="space-y-1 mb-4">
-                  {service.points.map((point, idx) => (
-                    <li key={idx} className="flex text-sm text-gray-600">
-                      <FaCheckCircle className="text-green-500 mr-2 mt-1" />
-                      {point}
-                    </li>
-                  ))}
-                </ul>
+            {/* Animated Gradient Border */}
+            <div className="absolute inset-0 z-0 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 animate-pulse opacity-30 group-hover:opacity-60"></div>
+
+            {/* Card Content */}
+            <div className="relative z-10 bg-white rounded-2xl overflow-hidden flex flex-col h-full">
+              <Image
+                src={service.image}
+                alt={service.title}
+                width={500}
+                height={300}
+                className="w-full h-52 object-cover"
+              />
+              <div className="p-6 flex flex-col flex-grow justify-between">
+                <div>
+                  <h3 className="text-xl font-bold text-blue-700 mb-2">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-700 mb-3">{service.description}</p>
+                  <p className="text-green-600 font-medium mb-3">
+                    {service.stats}
+                  </p>
+                  <ul className="space-y-1 mb-4">
+                    {service.points.map((point, idx) => (
+                      <li key={idx} className="flex text-sm text-gray-600">
+                        <FaCheckCircle className="text-green-500 mr-2 mt-1" />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <a
+                  href={service.link}
+                  className="mt-4 inline-block text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-full text-sm font-medium transition"
+                >
+                  Learn More About This Service
+                </a>
               </div>
-              <a
-                href={service.link}
-                className="mt-4 inline-block text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-full text-sm font-medium transition"
-              >
-                Learn More About This Service
-              </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
