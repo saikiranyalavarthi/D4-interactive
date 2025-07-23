@@ -22,6 +22,7 @@ import SuccessStories from "./Components/SuccessStories";
 import CallToActionSection from "./Components/CallToActionSection";
 import IndustriesSection from "./Components/IndustriesSection";
 import DigitalSuccessBanner from "./Components/DigitalSuccessBanner";
+import NameSection from "./Components/NameSection";
 
 export default function Home() {
   const services = [
@@ -141,7 +142,8 @@ export default function Home() {
         `}
       </Script>
       {/* Hero Section */}
-      <HeroWithContactForm />
+      <NameSection />
+      {/* <HeroWithContactForm /> */}
       {/* <header className="py-20 px-6 md:px-20 bg-white text-black">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="flex-1 text-center md:text-left">
