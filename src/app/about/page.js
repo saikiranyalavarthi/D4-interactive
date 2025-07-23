@@ -5,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 import ExperienceSection from "../Components/ExperienceSection";
 import SalesProcess from "../Components/SalesProcess";
+import WhatWeOffer from "../Components/WhatWeOffer";
 
 export default function About() {
   const whyChooseUs = [
@@ -158,7 +159,7 @@ export default function About() {
 
       {/* Stats + Experience */}
       <ExperienceSection />
-
+      <WhatWeOffer />
       {/* Mission */}
       <section className="py-16 px-6 md:px-20 bg-white text-black text-center ">
         <h2 className="text-3xl font-semibold text-purple-700 mb-6">
