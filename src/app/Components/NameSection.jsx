@@ -20,7 +20,7 @@ export default function HeroSection() {
         D4 INTERACTIVE
       </h1>
 
-      <h1 className="text-4xl md:text-8xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-400 via-yellow-300 via-blue-300 to-blue-800">
+      <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-br from-orange-500 via-pink-400 via-yellow-300 via-blue-300 to-blue-800">
         AI Digital Marketing Solutions
       </h1>
       <h2 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-[linear-gradient(to_right,#ff8008,#ffc837)]">
