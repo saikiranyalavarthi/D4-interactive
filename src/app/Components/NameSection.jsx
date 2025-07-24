@@ -207,6 +207,13 @@ export default function HeroSection() {
                   <option value="WordPress Development">
                     WordPress Development
                   </option>
+                  <option value="AI Services">AI Services</option>
+                  <option value="Data Mining">Data Mining</option>
+                  <option value="Video Production">Video Production</option>
+                  <option value="AI Automation">AI Automation</option>
+                  <option value="App/Web Data Crawling">
+                    App/Web Data Crawling
+                  </option>
                   <option value="Other">Other</option>
                 </select>
               </div>
