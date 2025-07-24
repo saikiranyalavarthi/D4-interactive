@@ -376,13 +376,13 @@ export default function HeroSection() {
         </div>
 
         {/* Right Animation */}
-        <div className="w-full md:w-1/2 max-w-md">
+        <div className="w-full md:w-1/2 px-4 mt-20 md:mt-0">
           <Lottie
             animationData={undefined}
             path="/assets/Robot-Bot 3D.json"
             loop={true}
             autoplay={true}
-            className="w-[200px] h-[200px] sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px] mx-auto"
+            className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px] mx-auto"
           />
         </div>
       </section>
