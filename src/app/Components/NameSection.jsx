@@ -302,7 +302,7 @@ export default function HeroSection() {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-blue-300 via-blue-300 to-white mb-2">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-blue-300 via-blue-300 to-white mb-2">
             D4 INTERACTIVE
           </h1>
           <h2 className="text-3xl md:text-3xl font-bold text-white mb-2">
