@@ -24,6 +24,7 @@ import IndustriesSection from "./Components/IndustriesSection";
 import DigitalSuccessBanner from "./Components/DigitalSuccessBanner";
 import NameSection from "./Components/NameSection";
 import WhatWeOffer from "./Components/WhatWeOffer";
+import YoutubeSection from "./Components/YoutubeSection";
 
 export default function Home() {
   const services = [
@@ -355,6 +356,7 @@ export default function Home() {
         ))}
       </section> */}
       <IndustriesSection />
+      <YoutubeSection />
       <WhatWeOffer />
       <section className="py-20 px-6 md:px-20 bg-white">
         <div className="max-w-5xl mx-auto space-y-6 text-gray-700 text-[16px] leading-relaxed">
