@@ -89,6 +89,24 @@ export default function WebDevelopmentPage() {
               dynamic business site or a complex web app, we deliver it.
             </p>
             <p>
+              As a leading website development company, we specialize in
+              creating custom web solutions that transform your digital presence
+              and accelerate business growth. Our comprehensive services include
+              e-commerce platforms, content management systems, web
+              applications, and enterprise-level solutions built with scalable
+              architectures. We pride ourselves on delivering projects on time
+              and within budget while maintaining the highest standards of
+              quality and security. Our team of certified developers, designers,
+              and project managers work collaboratively to ensure seamless
+              communication and successful project outcomes. We utilize agile
+              development methodologies, conduct regular quality assurance
+              testing, and provide detailed documentation for all deliverables.
+              Our post-launch support includes hosting solutions, security
+              monitoring, performance optimization, and ongoing technical
+              maintenance to ensure your website continues to perform optimally
+              and support your business objectives.
+            </p>
+            <p>
               Our team of skilled developers integrates cutting-edge
               technologies, frameworks, and tools to ensure your website is
               secure, fast, mobile-friendly, and easy to scale.
@@ -129,6 +147,43 @@ export default function WebDevelopmentPage() {
             your goals. We prioritize responsiveness, clean-code architecture,
             and cross-browser compatibility to help your brand scale fast. Our
             solutions are future-proof and built with your growth in mind.
+          </p>
+          <p>
+            Our web development company delivers comprehensive digital solutions
+            that combine technical expertise with creative innovation to help
+            businesses thrive online. We specialize in custom web applications,
+            e-commerce platforms, content management systems, and enterprise
+            software solutions designed to streamline operations and enhance
+            user experiences. Our development process emphasizes security,
+            scalability, and performance optimization to ensure your web
+            applications can grow alongside your business. We maintain
+            transparent communication throughout the development lifecycle,
+            providing regular updates, milestone reports, and opportunities for
+            feedback and revision. Our quality assurance team conducts extensive
+            testing across multiple browsers, devices, and operating systems to
+            guarantee flawless functionality and user experience. We offer
+            flexible engagement models, competitive pricing, and ongoing support
+            services to accommodate businesses of all sizes and budgets.
+          </p>
+          <p>
+            As a full-service website development agency, we deliver
+            comprehensive digital solutions that transform business operations
+            and enhance customer experiences through innovative web technologies
+            and strategic implementation. Our agency maintains specialized teams
+            for frontend development, backend engineering, database design, and
+            system integration to handle projects of any complexity and scale.
+            We utilize project management methodologies, quality assurance
+            protocols, and client communication systems that ensure transparent,
+            efficient, and successful project delivery. Our development services
+            include custom web applications, e-commerce platforms, content
+            management systems, and enterprise software solutions built with
+            scalable, secure architectures. We provide strategic consulting,
+            technology roadmap planning, and digital transformation guidance to
+            help businesses leverage web technologies for competitive advantage.
+            Our agency maintains partnerships with leading technology vendors,
+            cloud providers, and digital marketing platforms to offer integrated
+            solutions that maximize your technology investment and business
+            outcomes.
           </p>
         </div>
 

@@ -136,6 +136,177 @@ export default function SocialMediaMarketingPage() {
             Marketing company in Hyderabad. Let us transform your brand with
             audience-first strategy and meaningful engagement.
           </p>
+          <div className="space-y-6 text-lg leading-relaxed text-gray-800">
+            <p>
+              <strong>
+                Professional Social Media Marketing Services | Digital Marketing
+                Agency
+              </strong>
+            </p>
+
+            <p>
+              Our full-service digital marketing agency specializes in
+              delivering results-driven social media marketing services that
+              amplify your brand presence across all major platforms. We
+              understand that effective social media marketing requires
+              strategic planning, creative content development, and data-driven
+              execution to achieve measurable business outcomes.
+            </p>
+
+            <p>
+              <strong>Expert Social Media Strategy Development</strong>
+              <br />
+              Our experienced social media marketing team develops customized
+              strategies tailored to your specific business objectives and
+              target audience demographics. We conduct thorough market research
+              and competitive analysis to position your brand effectively in the
+              digital landscape, ensuring maximum engagement and conversion
+              rates.
+            </p>
+
+            <p>
+              <strong>Multi-Platform Social Media Management Services</strong>
+              <br />
+              We provide comprehensive social media management across Facebook,
+              Instagram, Twitter, LinkedIn, TikTok, and YouTube platforms. Our
+              digital marketing specialists create platform-specific content
+              that resonates with your audience while maintaining consistent
+              brand messaging and visual identity throughout all social
+              channels.
+            </p>
+
+            <p>
+              <strong>Content Creation and Curation Excellence</strong>
+              <br />
+              Our creative team produces high-quality, engaging content
+              including graphics, videos, carousel posts, stories, and
+              interactive media that drives user engagement and shares. We focus
+              on creating viral-worthy content that not only entertains but also
+              educates your audience about your products and services.
+            </p>
+
+            <p>
+              <strong>Paid Social Media Advertising Campaigns</strong>
+              <br />
+              Maximize your ROI with our targeted social media advertising
+              services featuring Facebook Ads, Instagram Ads, LinkedIn Ads, and
+              Twitter Ads management. Our certified advertising specialists
+              optimize campaigns for lead generation, brand awareness, website
+              traffic, and sales conversions while maintaining cost-effective
+              budget allocation.
+            </p>
+
+            <p>
+              <strong>Social Media Analytics and Performance Reporting</strong>
+              <br />
+              Track your social media success with our comprehensive analytics
+              and reporting services. We provide detailed insights into audience
+              behavior, engagement metrics, reach statistics, and conversion
+              tracking to continuously optimize your social media marketing
+              performance and demonstrate clear return on investment.
+            </p>
+
+            <p>
+              <strong>Influencer Marketing and Partnership Development</strong>
+              <br />
+              Expand your brand reach through strategic influencer
+              collaborations and partnership campaigns. Our team identifies and
+              connects your brand with relevant influencers and content creators
+              who align with your target market, ensuring authentic promotional
+              content that drives genuine engagement and conversions.
+            </p>
+
+            <p>
+              <strong>Community Management and Customer Engagement</strong>
+              <br />
+              Build lasting relationships with your audience through
+              professional community management services. Our dedicated social
+              media managers respond to comments, messages, and reviews promptly
+              while fostering positive brand conversations and addressing
+              customer inquiries with professionalism and brand consistency.
+            </p>
+
+            <p>
+              <strong>Social Media Crisis Management Solutions</strong>
+              <br />
+              Protect your brand reputation with our proactive crisis management
+              strategies. We monitor brand mentions, address negative feedback
+              constructively, and implement damage control measures to maintain
+              your positive online presence during challenging situations.
+            </p>
+
+            <p>
+              <strong>Local Social Media Marketing for Small Businesses</strong>
+              <br />
+              Boost your local business visibility with geo-targeted social
+              media campaigns designed to attract customers in your service
+              area. We optimize your social profiles for local search, create
+              location-based content, and implement local hashtag strategies to
+              increase foot traffic and local brand awareness.
+            </p>
+
+            <p>
+              <strong>E-commerce Social Media Integration</strong>
+              <br />
+              Drive online sales through seamless social commerce integration
+              featuring Instagram Shopping, Facebook Shop, and Pinterest Product
+              Catalogs. We optimize your product listings, create shoppable
+              posts, and implement conversion tracking to transform social media
+              followers into paying customers.
+            </p>
+
+            <p>
+              <strong>Brand Awareness and Reputation Management</strong>
+              <br />
+              Establish your brand as an industry authority through consistent,
+              valuable content sharing and thought leadership positioning. Our
+              reputation management strategies ensure positive brand perception
+              while addressing any negative mentions or reviews professionally
+              and effectively.
+            </p>
+
+            <p>
+              <strong>Social Media Audit and Optimization Services</strong>
+              <br />
+              Improve your existing social media performance with our
+              comprehensive audit services. We analyze your current social media
+              presence, identify optimization opportunities, and provide
+              actionable recommendations to enhance your overall digital
+              marketing effectiveness.
+            </p>
+
+            <p>
+              <strong>Custom Social Media Training and Consulting</strong>
+              <br />
+              Empower your internal team with our social media training programs
+              and consulting services. We provide hands-on training sessions,
+              best practices workshops, and ongoing consultation to help your
+              staff manage social media marketing initiatives effectively and
+              efficiently.
+            </p>
+
+            <p>
+              <strong>Measurable Results and ROI-Focused Approach</strong>
+              <br />
+              Our data-driven approach ensures every social media marketing
+              campaign delivers measurable results aligned with your business
+              goals. We focus on key performance indicators including engagement
+              rates, lead generation, website traffic, and sales conversions to
+              maximize your marketing investment and drive sustainable business
+              growth.
+            </p>
+
+            <p>
+              <em>
+                Partner with our award-winning digital marketing agency to
+                transform your social media presence into a powerful business
+                growth engine. Contact us today for a free social media
+                marketing consultation and discover how our expert services can
+                elevate your brand in the competitive digital marketplace.
+              </em>
+            </p>
+          </div>
+
           <Link
             href="/contact"
             className="inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded hover:bg-indigo-700 transition"
