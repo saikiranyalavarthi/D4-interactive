@@ -2,6 +2,19 @@
 
 import Head from "next/head";
 import Link from "next/link";
+import {
+  FaBullhorn,
+  FaPenFancy,
+  FaPalette,
+  FaUsers,
+  FaAd,
+  FaChartPie,
+  FaUserFriends,
+  FaHeadphonesAlt,
+  FaFacebookF,
+  FaLinkedin,
+  FaTwitter,
+} from "react-icons/fa";
 
 export default function SocialMediaMarketingPage() {
   const title = "Social Media Marketing Company in Hyderabad | D4 Interactive";
@@ -16,6 +29,74 @@ export default function SocialMediaMarketingPage() {
     "D4 Interactive SMM",
     "LinkedIn Advertising",
     "Social Ads Agency Hyderabad",
+  ];
+  const smmServices = [
+    {
+      title: "Social Media Strategy Development",
+      description:
+        "Gravitas works closely with clients to develop bespoke social media strategies aligned with their business objectives. This involves identifying target audiences, determining key messaging, selecting appropriate social media platforms, and outlining content plans.",
+      icon: <FaBullhorn className="text-indigo-500 text-3xl" />,
+    },
+    {
+      title: "Content Writing",
+      description:
+        "Gravitas assists clients in creating engaging and SEO Friendly content for their social media channels. This includes producing various types of content such as text posts, images, videos, infographics, and interactive polls. We also manage content calendars to ensure consistent posting schedules.",
+      icon: <FaPenFancy className="text-indigo-500 text-3xl" />,
+    },
+    {
+      title: "Graphic Designing",
+      description:
+        "Our graphic design team at Gravitas believes in visual storytelling. Striking visuals not only catch the eye but also convey your brand's narrative. Our team blends creativity with strategy to craft compelling visuals. We ensure consistent design elements, reinforcing brand identity and leaving a lasting impression.",
+      icon: <FaPalette className="text-indigo-500 text-3xl" />,
+    },
+    {
+      title: "Community Engagement",
+      description:
+        "Gravitas focuses on fostering meaningful interactions and building communities around clients' brands on social media. This involves responding to comments and messages, initiating conversations with followers, and actively engaging with relevant communities and influencers.",
+      icon: <FaUsers className="text-indigo-500 text-3xl" />,
+    },
+    {
+      title: "Paid Advertising Campaigns",
+      description:
+        "Gravitas helps clients amplify their reach and engagement through targeted paid advertising campaigns on platforms like Facebook, Instagram, Twitter, LinkedIn, and others. We handle campaign setup, audience targeting, ad creative development, budget optimization, and performance tracking.",
+      icon: <FaAd className="text-indigo-500 text-3xl" />,
+    },
+    {
+      title: "Social Media Analytics & Reporting",
+      description:
+        "Gravitas offers comprehensive analytics to track social media campaign performance, including reach, engagement, click-through rates, conversions, and ROI. We provide data-driven recommendations for optimization",
+      icon: <FaChartPie className="text-indigo-500 text-3xl" />,
+    },
+    {
+      title: "Influencer Marketing",
+      description:
+        "Gravitas leverages influencer partnerships to enhance brand visibility, credibility, and engagement on social media. We identify relevant influencers within clients' industries, negotiate partnerships, coordinate content collaborations, and measure the impact of influencer campaigns..",
+      icon: <FaUserFriends className="text-indigo-500 text-3xl" />,
+    },
+    {
+      title: "Social Media Listening & Monitoring",
+      description:
+        "Gravitas employs social media listening tools to monitor brand mentions, sentiment, and trends across different platforms. This enables them to gain valuable insights into customer perceptions, identify potential issues or crises, and proactively address feedback or concerns.",
+      icon: <FaHeadphonesAlt className="text-indigo-500 text-3xl" />,
+    },
+    {
+      title: "Meta Optimization",
+      description:
+        "Gravitas enhances clients Meta platforms presence with tailored optimization strategies, analyzing performance metrics, refining audience targeting, and optimizing ad campaigns. We boost content engagement to ensure higher visibility and conversion rates.",
+      icon: <FaFacebookF className="text-indigo-500 text-3xl" />,
+    },
+    {
+      title: "LinkedIn Marketing",
+      description:
+        "Gravitas partners with clients to create personalized LinkedIn marketing strategies, targeting industries and professionals, developing compelling profiles, and leveraging LinkedIn's advertising tools. We aim to elevate your LinkedIn presence, foster meaningful connections, and drive business growth.",
+      icon: <FaLinkedin className="text-indigo-500 text-3xl" />,
+    },
+    {
+      title: "Twitter Optimization",
+      description:
+        "Gravitas collaborates with clients to create tailored Twitter optimization strategies that align with their business goals. By analyzing follower demographics, refining messaging, and enhancing tweet visibility, we ensure your Twitter presence achieves maximum reach, engagement, and brand impact.",
+      icon: <FaTwitter className="text-indigo-500 text-3xl" />,
+    },
   ];
 
   return (
@@ -152,161 +233,39 @@ export default function SocialMediaMarketingPage() {
               strategic planning, creative content development, and data-driven
               execution to achieve measurable business outcomes.
             </p>
-
-            <p>
-              <strong>Expert Social Media Strategy Development</strong>
-              <br />
-              Our experienced social media marketing team develops customized
-              strategies tailored to your specific business objectives and
-              target audience demographics. We conduct thorough market research
-              and competitive analysis to position your brand effectively in the
-              digital landscape, ensuring maximum engagement and conversion
-              rates.
-            </p>
-
-            <p>
-              <strong>Multi-Platform Social Media Management Services</strong>
-              <br />
-              We provide comprehensive social media management across Facebook,
-              Instagram, Twitter, LinkedIn, TikTok, and YouTube platforms. Our
-              digital marketing specialists create platform-specific content
-              that resonates with your audience while maintaining consistent
-              brand messaging and visual identity throughout all social
-              channels.
-            </p>
-
-            <p>
-              <strong>Content Creation and Curation Excellence</strong>
-              <br />
-              Our creative team produces high-quality, engaging content
-              including graphics, videos, carousel posts, stories, and
-              interactive media that drives user engagement and shares. We focus
-              on creating viral-worthy content that not only entertains but also
-              educates your audience about your products and services.
-            </p>
-
-            <p>
-              <strong>Paid Social Media Advertising Campaigns</strong>
-              <br />
-              Maximize your ROI with our targeted social media advertising
-              services featuring Facebook Ads, Instagram Ads, LinkedIn Ads, and
-              Twitter Ads management. Our certified advertising specialists
-              optimize campaigns for lead generation, brand awareness, website
-              traffic, and sales conversions while maintaining cost-effective
-              budget allocation.
-            </p>
-
-            <p>
-              <strong>Social Media Analytics and Performance Reporting</strong>
-              <br />
-              Track your social media success with our comprehensive analytics
-              and reporting services. We provide detailed insights into audience
-              behavior, engagement metrics, reach statistics, and conversion
-              tracking to continuously optimize your social media marketing
-              performance and demonstrate clear return on investment.
-            </p>
-
-            <p>
-              <strong>Influencer Marketing and Partnership Development</strong>
-              <br />
-              Expand your brand reach through strategic influencer
-              collaborations and partnership campaigns. Our team identifies and
-              connects your brand with relevant influencers and content creators
-              who align with your target market, ensuring authentic promotional
-              content that drives genuine engagement and conversions.
-            </p>
-
-            <p>
-              <strong>Community Management and Customer Engagement</strong>
-              <br />
-              Build lasting relationships with your audience through
-              professional community management services. Our dedicated social
-              media managers respond to comments, messages, and reviews promptly
-              while fostering positive brand conversations and addressing
-              customer inquiries with professionalism and brand consistency.
-            </p>
-
-            <p>
-              <strong>Social Media Crisis Management Solutions</strong>
-              <br />
-              Protect your brand reputation with our proactive crisis management
-              strategies. We monitor brand mentions, address negative feedback
-              constructively, and implement damage control measures to maintain
-              your positive online presence during challenging situations.
-            </p>
-
-            <p>
-              <strong>Local Social Media Marketing for Small Businesses</strong>
-              <br />
-              Boost your local business visibility with geo-targeted social
-              media campaigns designed to attract customers in your service
-              area. We optimize your social profiles for local search, create
-              location-based content, and implement local hashtag strategies to
-              increase foot traffic and local brand awareness.
-            </p>
-
-            <p>
-              <strong>E-commerce Social Media Integration</strong>
-              <br />
-              Drive online sales through seamless social commerce integration
-              featuring Instagram Shopping, Facebook Shop, and Pinterest Product
-              Catalogs. We optimize your product listings, create shoppable
-              posts, and implement conversion tracking to transform social media
-              followers into paying customers.
-            </p>
-
-            <p>
-              <strong>Brand Awareness and Reputation Management</strong>
-              <br />
-              Establish your brand as an industry authority through consistent,
-              valuable content sharing and thought leadership positioning. Our
-              reputation management strategies ensure positive brand perception
-              while addressing any negative mentions or reviews professionally
-              and effectively.
-            </p>
-
-            <p>
-              <strong>Social Media Audit and Optimization Services</strong>
-              <br />
-              Improve your existing social media performance with our
-              comprehensive audit services. We analyze your current social media
-              presence, identify optimization opportunities, and provide
-              actionable recommendations to enhance your overall digital
-              marketing effectiveness.
-            </p>
-
-            <p>
-              <strong>Custom Social Media Training and Consulting</strong>
-              <br />
-              Empower your internal team with our social media training programs
-              and consulting services. We provide hands-on training sessions,
-              best practices workshops, and ongoing consultation to help your
-              staff manage social media marketing initiatives effectively and
-              efficiently.
-            </p>
-
-            <p>
-              <strong>Measurable Results and ROI-Focused Approach</strong>
-              <br />
-              Our data-driven approach ensures every social media marketing
-              campaign delivers measurable results aligned with your business
-              goals. We focus on key performance indicators including engagement
-              rates, lead generation, website traffic, and sales conversions to
-              maximize your marketing investment and drive sustainable business
-              growth.
-            </p>
-
-            <p>
-              <em>
-                Partner with our award-winning digital marketing agency to
-                transform your social media presence into a powerful business
-                growth engine. Contact us today for a free social media
-                marketing consultation and discover how our expert services can
-                elevate your brand in the competitive digital marketplace.
-              </em>
-            </p>
           </div>
+          <div className="bg-gradient-to-br from-indigo-50 via-white to-purple-100 min-h-screen py-16 px-6">
+            <div className="max-w-7xl mx-auto">
+              <h1 className="text-4xl font-bold text-center text-indigo-800 mb-6">
+                Social Media Marketing Services
+              </h1>
+              <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12 text-lg leading-relaxed">
+                At Gravitas, we don’t just manage social media—we build brand
+                stories, nurture communities, and create data-driven strategies
+                that drive growth. From creative content to paid campaigns and
+                influencer partnerships, our solutions help brands make a
+                meaningful impact across platforms like Meta, LinkedIn, and
+                Twitter.
+              </p>
 
+              <div className="grid md:grid-cols-3 gap-6">
+                {smmServices.map((item, index) => (
+                  <div
+                    key={index}
+                    className="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition duration-300"
+                  >
+                    <div className="flex justify-center items-center mb-4">
+                      {item.icon}
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2 text-indigo-700">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-600">{item.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
           <Link
             href="/contact"
             className="inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded hover:bg-indigo-700 transition"

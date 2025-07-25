@@ -2,6 +2,16 @@
 
 import Head from "next/head";
 import Link from "next/link";
+import {
+  FaWordpress,
+  FaSearch,
+  FaShoppingCart,
+  FaPuzzlePiece,
+  FaMobileAlt,
+  FaPenNib,
+  FaTools,
+  FaChartLine,
+} from "react-icons/fa";
 
 export default function WebDevelopmentPage() {
   const title = "Web Development Company in Hyderabad | D4 Interactive";
@@ -16,7 +26,104 @@ export default function WebDevelopmentPage() {
     "Custom Web App Development",
     "SEO Friendly Websites",
   ];
-
+  const services = [
+    {
+      title: "Custom WordPress Website Development",
+      icon: <FaWordpress className="text-4xl text-blue-600" />,
+      description: [
+        "We build tailor-made WordPress websites that reflect your brand.",
+        "Visually engaging, user-friendly and scalable designs.",
+        "Custom-coded for flexibility, speed, and performance.",
+        "SEO-ready, mobile-responsive and easy to manage.",
+        "Optimized for lead generation and conversions.",
+        "From planning to launch, seamless WordPress experience.",
+      ],
+    },
+    {
+      title: "Website Analysis",
+      icon: <FaSearch className="text-4xl text-purple-600" />,
+      description: [
+        "We audit your website structure, content, and SEO.",
+        "Identify usability issues and speed bottlenecks.",
+        "Provide actionable insights to improve ROI.",
+        "Focus on technical SEO and performance.",
+        "Aligned with your business objectives.",
+        "Smarter digital decisions with expert analysis.",
+      ],
+    },
+    {
+      title: "E-commerce with WooCommerce",
+      icon: <FaShoppingCart className="text-4xl text-green-600" />,
+      description: [
+        "Build powerful WooCommerce-based online stores.",
+        "Custom product pages and secure checkout.",
+        "Integrate payment gateways and shipping.",
+        "Mobile-friendly and SEO-optimized platforms.",
+        "Scalable stores tailored to your niche.",
+        "Grow your sales with confidence.",
+      ],
+    },
+    {
+      title: "Plugin Installation",
+      icon: <FaPuzzlePiece className="text-4xl text-pink-600" />,
+      description: [
+        "Secure and reliable plugin installations.",
+        "Configure tools like SEO, booking, security.",
+        "Avoid plugin conflicts and performance issues.",
+        "Extend features without coding.",
+        "Custom plugin solutions if required.",
+        "Boost functionality safely and easily.",
+      ],
+    },
+    {
+      title: "Responsive Website Design",
+      icon: <FaMobileAlt className="text-4xl text-indigo-600" />,
+      description: [
+        "Perfect layout across mobile, tablet, desktop.",
+        "Mobile-first approach to modern design.",
+        "Fluid responsive layout structure.",
+        "Fast loading, smooth interactions.",
+        "Improve UX and reduce bounce rates.",
+        "Stay ahead in mobile world.",
+      ],
+    },
+    {
+      title: "Content Writing",
+      icon: <FaPenNib className="text-4xl text-yellow-600" />,
+      description: [
+        "SEO-rich, engaging website content.",
+        "Covers service pages, blogs, product info.",
+        "Tailored to your tone and audience.",
+        "Improve search visibility and trust.",
+        "Drive conversions with persuasive writing.",
+        "Boost your brand voice online.",
+      ],
+    },
+    {
+      title: "Maintenance & Support",
+      icon: <FaTools className="text-4xl text-red-600" />,
+      description: [
+        "Regular updates and uptime monitoring.",
+        "Fix issues and manage plugins/themes.",
+        "Speed, security, and backup support.",
+        "Urgent fixes with expert help.",
+        "Focus on business, we manage tech.",
+        "Your site stays secure and healthy.",
+      ],
+    },
+    {
+      title: "SEO Optimization",
+      icon: <FaChartLine className="text-4xl text-teal-600" />,
+      description: [
+        "Technical SEO and site structure fixes.",
+        "Faster page loads and better UX.",
+        "On-page optimization and meta tags.",
+        "Keyword research and analytics setup.",
+        "Boost Google ranking and traffic.",
+        "Achieve business growth through SEO.",
+      ],
+    },
+  ];
   return (
     <div className="min-h-screen text-white">
       <Head>
@@ -96,15 +203,7 @@ export default function WebDevelopmentPage() {
               applications, and enterprise-level solutions built with scalable
               architectures. We pride ourselves on delivering projects on time
               and within budget while maintaining the highest standards of
-              quality and security. Our team of certified developers, designers,
-              and project managers work collaboratively to ensure seamless
-              communication and successful project outcomes. We utilize agile
-              development methodologies, conduct regular quality assurance
-              testing, and provide detailed documentation for all deliverables.
-              Our post-launch support includes hosting solutions, security
-              monitoring, performance optimization, and ongoing technical
-              maintenance to ensure your website continues to perform optimally
-              and support your business objectives.
+              quality and security.
             </p>
             <p>
               Our team of skilled developers integrates cutting-edge
@@ -148,45 +247,33 @@ export default function WebDevelopmentPage() {
             and cross-browser compatibility to help your brand scale fast. Our
             solutions are future-proof and built with your growth in mind.
           </p>
-          <p>
-            Our web development company delivers comprehensive digital solutions
-            that combine technical expertise with creative innovation to help
-            businesses thrive online. We specialize in custom web applications,
-            e-commerce platforms, content management systems, and enterprise
-            software solutions designed to streamline operations and enhance
-            user experiences. Our development process emphasizes security,
-            scalability, and performance optimization to ensure your web
-            applications can grow alongside your business. We maintain
-            transparent communication throughout the development lifecycle,
-            providing regular updates, milestone reports, and opportunities for
-            feedback and revision. Our quality assurance team conducts extensive
-            testing across multiple browsers, devices, and operating systems to
-            guarantee flawless functionality and user experience. We offer
-            flexible engagement models, competitive pricing, and ongoing support
-            services to accommodate businesses of all sizes and budgets.
-          </p>
-          <p>
-            As a full-service website development agency, we deliver
-            comprehensive digital solutions that transform business operations
-            and enhance customer experiences through innovative web technologies
-            and strategic implementation. Our agency maintains specialized teams
-            for frontend development, backend engineering, database design, and
-            system integration to handle projects of any complexity and scale.
-            We utilize project management methodologies, quality assurance
-            protocols, and client communication systems that ensure transparent,
-            efficient, and successful project delivery. Our development services
-            include custom web applications, e-commerce platforms, content
-            management systems, and enterprise software solutions built with
-            scalable, secure architectures. We provide strategic consulting,
-            technology roadmap planning, and digital transformation guidance to
-            help businesses leverage web technologies for competitive advantage.
-            Our agency maintains partnerships with leading technology vendors,
-            cloud providers, and digital marketing platforms to offer integrated
-            solutions that maximize your technology investment and business
-            outcomes.
-          </p>
         </div>
-
+        <section className="py-16 bg-gray-100">
+          <div className="max-w-7xl mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center mb-12 text-blue-500">
+              Our{" "}
+              <span className="text-indigo-600"> Web Developmnet Services</span>
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {services.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition duration-300"
+                >
+                  <div className="flex justify-center mb-4">{item.icon}</div>
+                  <h3 className="text-xl font-semibold text-center text-gray-800 mb-3">
+                    {item.title}
+                  </h3>
+                  <ul className="text-gray-600 text-sm space-y-1 list-disc list-inside">
+                    {item.description.map((line, i) => (
+                      <li key={i}>{line}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
         {/* CTA */}
         <div className="text-center">
           <Link
