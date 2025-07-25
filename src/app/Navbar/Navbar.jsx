@@ -17,7 +17,7 @@ const serviceLinks = [
   { name: "AI Automachine", href: "/services/Ai" },
   { name: "Web Crawling", href: "/services/web-crawling" },
   { name: "D4 Interactive", href: "/services/D4Interactive" },
-  { name: "Digital Marketing Training", href: "/services/Digital" },
+  // { name: "Digital Marketing Training", href: "/services/Digital" },
 ];
 
 const industriesLinks = [
