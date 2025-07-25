@@ -502,7 +502,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <DigitalMarketingTraining />
+      {/* <DigitalMarketingTraining /> */}
     </div>
   );
 }
