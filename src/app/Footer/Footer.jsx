@@ -167,11 +167,15 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="mt-10 pt-6 border-t border-white/20">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between text-sm text-gray-300">
-          <p>
-            © {year}{" "}
-            <span className="text-red-400 font-semibold">D4 Interactive</span>.
-            All rights reserved.
-          </p>
+         <p className="text-gray-400 text-sm relative group cursor-pointer w-fit">
+  © {year}{" "}
+  <span className="text-red-400 font-semibold">D4 Interactive</span>. All rights reserved.
+  
+  {/* Tooltip on hover */}
+  <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black text-white text-xs px-2 py-1 rounded-lg shadow-lg whitespace-nowrap">
+    Website designed by Saikiran Yalavarthi
+  </span>
+</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <Link href="/about" className="hover:underline">
               About
