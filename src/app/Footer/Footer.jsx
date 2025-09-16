@@ -172,10 +172,12 @@ export default function Footer() {
   <span className="text-red-400 font-semibold">D4 Interactive</span>. All rights reserved.
   
   {/* Tooltip on hover */}
-  <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black text-white text-xs px-2 py-1 rounded-lg shadow-lg whitespace-nowrap">
-    Website designed by Saikiran Yalavarthi
-  </span>
-</p>
+ <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 
+  opacity-100 md:opacity-0 md:group-hover:opacity-100 
+  transition-opacity duration-300 bg-black text-white text-xs px-2 py-1 rounded-lg shadow-lg whitespace-nowrap">
+  Website designed by Saikiran Yalavarthi
+</span>
+
           <div className="flex gap-6 mt-4 md:mt-0">
             <Link href="/about" className="hover:underline">
               About
